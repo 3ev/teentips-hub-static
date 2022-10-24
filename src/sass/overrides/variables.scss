@@ -87,11 +87,12 @@ $theme-colors: map-merge(
 // Typography
 //
 $font-family-sans-serif: "DM Sans", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-copy: "AtkinsonHyperlegible", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-size-base: 1.25rem;
 $line-height-base: 1.4;
 $line-height-sm: 1.25;
 $line-height-lg: 1.5;   
-$h1-font-size: $font-size-base * 2.8;
+$h1-font-size: $font-size-base * 2.8; 
 $h2-font-size: $font-size-base * 2.4;
 $h3-font-size: $font-size-base * 1.6;
 $h4-font-size: $font-size-base * 1.2;
@@ -99,13 +100,15 @@ $h5-font-size: $font-size-base * 0.8;
 $h6-font-size: $font-size-base * 0.7;
 $h7-font-size: $font-size-base * 0.6;
 
-
 $headings-margin-bottom:      1rem * .5;
 $headings-font-family:        null;
 $headings-font-style:         null;
 $headings-font-weight:        500;
 $headings-line-height:        1.2;
 $headings-color:              null;
+
+// Border radius
+$border-radius: 99px;
 
 // Body
 //
@@ -125,3 +128,4 @@ $link-hover-decoration:                   null;
 //
 // Style p element.
 $paragraph-margin-bottom:   1rem;
+

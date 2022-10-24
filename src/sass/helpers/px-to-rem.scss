@@ -2,3 +2,8 @@
     $remValue: ($value / 16) + rem; 
     @return $remValue;
 }
+
+@function pxtoem($value, $base) {
+    $emValue: ($value / $base) + em; 
+    @return $emValue;
+}
