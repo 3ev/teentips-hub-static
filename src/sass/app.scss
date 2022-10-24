@@ -9,6 +9,7 @@
         url('/fonts/atkinson-hyperlegible/SVG/Atkinson-Hyperlegible-Regular-102') format('svg'); /* Legacy iOS */
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
@@ -35,4 +36,5 @@
 
 // 6.Custom styling
 @import "./common/typography";
+@import "./components/icons";
 
