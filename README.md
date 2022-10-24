@@ -6,18 +6,27 @@ This is a Sass/HTML implementation of the Teen Tips Hub design
 
 ### 1. Install dependancies
 
-```yarn 
+```bash
+yarn
+```
 
 ### 2. Build static files
 
-'''npm run build
+
+```bash
+npm run build
+```
 
 ## Develop locally
 
 ### 1. Run dev command
 
-```npm run dev
+```bash
+npm run dev
+```
 
 ### 2. Run a local server
 
-```npm run server
+```bash
+npm run server
+```
