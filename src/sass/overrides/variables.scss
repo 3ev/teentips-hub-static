@@ -1,0 +1,127 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+//
+$blue: #334FB4;
+$blue-vibrant: #349CE2;
+$blue-xbright: #66CCFF;
+$blue-20: #D5EBFF;
+$blue-10: #EBF5FF;
+$blue-5: #F5FAFF;
+
+$darkblue: #2A297C;
+$darkblue-50:  #8890B1;
+$darkblue-20: #CFCFDA;
+$darkblue-10: #EBEBEF;
+$darkblue-5: #F7F7F8;
+
+$green: #397D1C;
+$green-vibrant: #7ED957;
+
+$berry: #E40259;
+$white: #FFFFFF;
+$black: #343434;
+
+// Default Bootstrap colors
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $darkblue-20,
+    "gray-dark":  $darkblue-50
+  ),
+  $colors
+);
+
+// Bootstrap theme colors 
+$primary:       $blue;
+$secondary:     $blue-vibrant;
+$success:       $green;
+$info:          $blue-vibrant;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $darkblue-20;
+$dark:          $black;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+// Typography
+//
+$font-family-sans-serif: "DM Sans", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-size-base: 1.25rem;
+$line-height-base: 1.4;
+$line-height-sm: 1.25;
+$line-height-lg: 1.5;   
+$h1-font-size: $font-size-base * 2.8;
+$h2-font-size: $font-size-base * 2.4;
+$h3-font-size: $font-size-base * 1.6;
+$h4-font-size: $font-size-base * 1.2;
+$h5-font-size: $font-size-base * 0.8;
+$h6-font-size: $font-size-base * 0.7;
+$h7-font-size: $font-size-base * 0.6;
+
+
+$headings-margin-bottom:      1rem * .5;
+$headings-font-family:        null;
+$headings-font-style:         null;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              null;
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-color:                $black;
+
+// Links
+//
+// Style anchor elements.
+$link-color:                              $primary;
+$link-decoration:                         underline;
+$link-shade-percentage:                   20%;
+$link-hover-color:                        $link-color;
+$link-hover-decoration:                   null;
+
+// Paragraphs
+//
+// Style p element.
+$paragraph-margin-bottom:   1rem;
