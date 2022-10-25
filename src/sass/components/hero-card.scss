@@ -1,15 +1,15 @@
-.summary-card {
+.hero-card {
     
 }
-.summary-card__title {
+.hero-card__title {
     @include font-size($h1-font-size);
     margin-bottom: 24px;
 }
-.summary-card__body {
+.hero-card__body {
     @include font-size($h5-font-size);
     margin-bottom: 24px;
 }
-.summary-card__footer {
+.hero-card__footer {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
