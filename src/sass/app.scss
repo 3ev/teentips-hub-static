@@ -30,11 +30,16 @@
 // 5. Include any optional Bootstrap components as you like
 @import "../../node_modules/bootstrap/scss/root";
 @import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
 @import "../../node_modules/bootstrap/scss/containers";
 @import "../../node_modules/bootstrap/scss/buttons";
 
 // 6.Custom styling
+@import "./helpers/list-reset";
 @import "./common/typography";
 @import "./components/icons";
+@import "./components/card";
 
