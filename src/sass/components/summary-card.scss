@@ -1,0 +1,16 @@
+.summary-card {
+    
+}
+.summary-card__title {
+    @include font-size($h1-font-size);
+    margin-bottom: 24px;
+}
+.summary-card__body {
+    @include font-size($h5-font-size);
+    margin-bottom: 24px;
+}
+.summary-card__footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
