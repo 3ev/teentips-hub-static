@@ -1,0 +1,31 @@
+.highlight-card {
+    background: $blue;
+    padding: 30px;
+    color: $white;
+    border-radius: $border-radius;
+    position: relative;
+    @include media-breakpoint-up(lg) {
+        padding-right: 100px;
+    }
+}
+.highlight-card__title {
+    color: $green-vibrant;
+    @include font-size($h3-font-size);
+}
+.highlight-card__icon {
+    margin-right: 8px;
+}
+.highlight-card__body {
+    margin-left: pxtorem(32);
+    @include media-breakpoint-up(lg) {
+        margin-left: pxtorem(40);
+    }
+}
+.highlight-card__image {
+    border-radius: $border-radius;
+    filter: drop-shadow(0px 4px 18px rgba(28, 37, 98, 0.1));
+    width: 99px;
+    position: absolute;
+    right: -20px;
+    top: -35px;
+}

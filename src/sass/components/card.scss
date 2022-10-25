@@ -1,6 +1,6 @@
 .card {
     background: $darkblue-5;
-    border-radius: 16px;
+    border-radius: $border-radius;
     box-shadow: 0px 4px 18px rgba(28, 37, 98, 0.1);
     padding: 20px;
 }
