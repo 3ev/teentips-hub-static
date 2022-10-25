@@ -23,6 +23,7 @@
         "@roots/bud": "6.4.5",
         "@roots/bud-sass": "^6.5.1",
         "@roots/sage": "6.4.5",
+        "prettier": "2.7.1",
         "sass": "^1.52.2"
     },
     "dependencies": {
