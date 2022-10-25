@@ -3,6 +3,10 @@
 .summary-card__title {
     font-size: $h6-font-size;
     margin-bottom: 4px;
+    padding-right: 70px;
+    @include media-breakpoint-up(sm) {
+        padding-right: 40px;
+    }
 }
 .summary-card__image img {
     max-width: 100%;
@@ -17,6 +21,28 @@
 }
 .summary-card__text {
     font-size: $h7-font-size;
+}
+.summary-card__body {
+    position: relative;
+}
+.summary-card__icon {
+    position: absolute;
+    right: 0;
+    padding: 6px 8px;
+    vertical-align: sup;
+    font-size: pxtorem(18);
+    border-radius: 8px;
+    background: $blue-10;
+    color: $blue;
+    &.icon::before {
+        position: relative;
+        top: 1px;
+    }
+    
+    // Custom alignment for top weighted iconography
+    &.icon-article::before {
+        top: 2px;
+    }
 }
 .summary-card--large {
     overflow: hidden;
@@ -44,6 +70,12 @@
         @include media-breakpoint-up(sm) {
             padding-bottom: 18px;
             margin-bottom: 18px;
+        }
+    }
+    & .summary-card__icon {
+        right: 30px;
+        @include media-breakpoint-up(sm) {
+            right: 40px;
         }
     }
 }
