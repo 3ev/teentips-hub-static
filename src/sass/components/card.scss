@@ -6,7 +6,13 @@
 }
 .card__title {
     color: $blue;
-    font-size: $h5-font-size;
+    font-size: $h6-font-size;
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 4px;
+    }
+    @include media-breakpoint-up(sm) {
+        font-size: $h5-font-size;
+    }
 }
 .card__icon {
     margin-right: 10px;
@@ -26,6 +32,6 @@
 
 }
 .card__body {
-    font-size: $h6-font-size;
+    font-size: $h7-font-size;
     margin: 0 0 0 28px;
 }   
