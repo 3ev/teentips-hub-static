@@ -1,8 +1,12 @@
 .kicker {
-    font-size: $h8-font-size;
-    color: $blue;
-    text-transform: uppercase;
-    font-weight: 700;
     margin: 0 0 -6px;
     letter-spacing: 0.1em;
+    font-size: $h8-font-size;
+    line-height: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blue;
+}
+.kicker--small {
+    font-size: pxtorem(10);
 }
