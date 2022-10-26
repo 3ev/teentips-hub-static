@@ -1,0 +1,34 @@
+// Button CSS
+.btn {
+    @include media-breakpoint-down(sm) {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+.btn .icon {
+    margin-right: 12px;
+    vertical-align: sub;
+    margin-left: -4px;
+}
+.btn.btn-primary {
+    --bs-btn-hover-bg: #{$blue-vibrant};
+    --bs-btn-hover-border-color: #{$blue-vibrant};
+}
+.btn.btn-outline-primary {
+    --bs-btn-hover-border-color: #{$blue-vibrant};
+    --bs-btn-hover-color: #{$blue-vibrant};
+    --bs-btn-hover-bg: #{$white};
+}
+.btn.btn-secondary {
+    --bs-btn-hover-bg: #{$green-vibrant};
+    --bs-btn-hover-border-color: #{$green-vibrant};
+}
+.btn.btn-outline-secondary {
+    --bs-btn-hover-border-color: #{$green-vibrant};
+    --bs-btn-hover-color: #{$green-vibrant};
+    --bs-btn-hover-bg: #{$white};
+}
+.btn.btn-info {
+    --bs-btn-color: #{$blue};
+}
