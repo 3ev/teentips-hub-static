@@ -1,14 +1,24 @@
 .hero {
-    display: flex;
-    flex-direction: row;
 }
 
-.hero {
-    justify-content: space-between;
+.hero__column-one {
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 75px;
+    }
 }
-.hero--d .hero__column-one {
-    flex-basis: 50%;
+.hero__column-two {
 }
-.hero--d .hero__column-two {
-    flex-basis: 40%;
+
+.hero__title {
+    @include font-size($h1-font-size);
+    margin-bottom: 24px;
+}
+.hero__body {
+    @include font-size($h5-font-size);
+    margin-bottom: 24px;
+}
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
