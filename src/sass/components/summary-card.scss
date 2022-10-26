@@ -28,21 +28,16 @@
 .summary-card__icon {
     position: absolute;
     right: 0;
-    padding: 6px 8px;
-    vertical-align: sup;
+    top: 0;
+    height: pxtoem(32,18);
+    width: pxtoem(32,18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: pxtorem(18);
     border-radius: 8px;
     background: $blue-10;
     color: $blue;
-    &.icon::before {
-        position: relative;
-        top: 1px;
-    }
-    
-    // Custom alignment for top weighted iconography
-    &.icon-article::before {
-        top: 2px;
-    }
 }
 .summary-card--large {
     overflow: hidden;
@@ -50,32 +45,26 @@
     border-radius: $border-radius;
     box-shadow: 0px 4px 18px rgba(28, 37, 98, 0.1);
     .summary-card__body {
-        padding: 30px;
+        margin: 30px;
         @include media-breakpoint-up(sm) {
-            padding: 40px;
+            margin: 40px;
         }
     }
-    & .summary-card__title {
+    .summary-card__title {
         @include media-breakpoint-up(sm) {
             font-size: $h3-font-size;
         }
     }
-    & .summary-card__text {
+    .summary-card__text {
         font-size: $h6-font-size;
         @include media-breakpoint-up(sm) {
             font-size: $h5-font-size;
         }
     }
-    & .summary-card__byline {
+    .summary-card__byline {
         @include media-breakpoint-up(sm) {
             padding-bottom: 18px;
             margin-bottom: 18px;
-        }
-    }
-    & .summary-card__icon {
-        right: 30px;
-        @include media-breakpoint-up(sm) {
-            right: 40px;
         }
     }
 }
