@@ -1,186 +1,404 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <!-- @include('partials.head') -->
+
     <head>
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="/css/app.css">
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="/css/app.css" />
     </head>
+
     <body>
         <!-- @include('partials.header') -->
-        <header class="site-header">
+        <header class="site-header container">
             <h1>The Wellbeing Hub, from Teen Tips</h1>
         </header>
-        
+
         <main>
+            <section class="container">
+                <h2>Buttons</h2>
+                <h3>Solid</h3>
+                <a href="#" class="btn btn-primary">Your account</a>
+                <a href="#" class="btn btn-primary"><span class="icon icon-user"></span>Your account</a>
+                <a href="#" class="btn btn-secondary"><span class="icon icon-user"></span>Your account</a>
+                <a href="#" class="btn btn-info">Your account</a>
+                <h3>Outline</h3>
+                <a href="#" class="btn btn-outline-primary">Your account</a>
+                <a href="#" class="btn btn-outline-primary"><span class="icon icon-user"></span>Your account</a>
+                <a href="#" class="btn btn-outline-secondary"><span class="icon icon-user"></span>Your account</a>
+            </section>
 
-        <section>
-        <h2>Buttons</h2>
-        <h3>Solid</h3>
-        <a href="#" class="btn btn-primary">Your account</a>
-        <a href="#" class="btn btn-primary"><span class="icon icon-user"></span>Your account</a>
-        <a href="#" class="btn btn-secondary"><span class="icon icon-user"></span>Your account</a>
-        <a href="#" class="btn btn-info">Your account</a>
-        <h3>Outline</h3>
-        <a href="#" class="btn btn-outline-primary">Your account</a>
-        <a href="#" class="btn btn-outline-primary"><span class="icon icon-user"></span>Your account</a>
-        <a href="#" class="btn btn-outline-secondary"><span class="icon icon-user"></span>Your account</a>
-        </section>
+            <section class="container">
+                <h2>Cards</h2>
+                <ul class="row list-reset">
+                    <li class="col-sm col-md-6 col-lg-3 d-flex">
+                        <div class="card">
+                            <h3 class="card__title"><span class="card__icon icon icon-course"></span>Our courses</h3>
+                            <p class="card__body">
+                                If you’re looking for a trusted courses for your parents, pupils and staff, The Wellbeing Hub is designed by
+                                experts to meet the social, emotional and educational needs of young people.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-sm col-md-6 col-lg-3 d-flex">
+                        <div class="card">
+                            <h3 class="card__title"><span class="card__icon icon icon-content"></span>Resources</h3>
+                            <p class="card__body">
+                                If you’re looking for a trusted courses for your parents, pupils and staff, The Wellbeing Hub is designed by
+                                experts to meet the social, emotional and educational needs of young people.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-sm col-md-6 col-lg-3 d-flex">
+                        <div class="card">
+                            <h3 class="card__title"><span class="card__icon icon icon-event"></span>Webinars & Talks</h3>
+                            <p class="card__body">
+                                We can deliver live Webinars and Talks on a range of topics, for pupils, parents and staff. And we can
+                                provide you with recorded talks to show at Parents Events.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="col-sm col-md-6 col-lg-3 d-flex">
+                        <div class="card">
+                            <h3 class="card__title"><span class="card__icon icon icon-article"></span>Learning Materials</h3>
+                            <p class="card__body">
+                                Access Videos, Lesson Plans and Resources, to play to pupils in class. We are regularly adding modules on
+                                different topics, for different year groups.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <h2>Hero card</h2>
+                <div class="hero-card">
+                    <p class="kicker">September's theme</p>
+                    <h2 class="hero-card__title">Staff & Parent Mental Health</h2>
+                    <p class="hero-card__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum, risus et porta eleifend, arcu neque pharetra
+                        ante, sed euismod nisl velit id lectus. Donec sodales, metus nec aliquam ultrices, erat libero iaculis nunc, nec
+                        vulputate.
+                    </p>
+                    <div class="hero-card__footer">
+                        <a class="btn btn-outline-primary" href="#"><span class="icon icon-download"></span>Autumn Term Line-up</a>
+                        <a class="btn btn-outline-primary" href="#"><span class="icon icon-download"></span>Monthly Themes 2022/2023 </a>
+                    </div>
+                </div>
+                <h2>Highlight card</h2>
+                <div class="highlight-card">
+                    <h3 class="highlight-card__title"><span class="highlight-card__icon icon icon-qa"></span>Live Q&A</h3>
+                    <p class="highlight-card__body">
+                        Q&A with Alicia Drummond, Therapist and Founder of The Wellbeing Hub on the first Tuesday of every month at 6pm
+                    </p>
+                    <img class="highlight-card__image" src="\images\content\alicia.jpg" />
+                </div>
+            </section>
 
-        <section>
-        <h2>Icons</h2>
-      <ul class="glyphs css-mapping">
-        <li>
-          <div class="icon icon-arrowdown"></div>
-          <input type="text" readonly="readonly" value="arrowdown">
-        </li>
-        <li>
-          <div class="icon icon-arrowleft"></div>
-          <input type="text" readonly="readonly" value="arrowleft">
-        </li>
-        <li>
-          <div class="icon icon-arrowright"></div>
-          <input type="text" readonly="readonly" value="arrowright">
-        </li>
-        <li>
-          <div class="icon icon-arrowup"></div>
-          <input type="text" readonly="readonly" value="arrowup">
-        </li>
-        <li>
-          <div class="icon icon-article"></div>
-          <input type="text" readonly="readonly" value="article">
-        </li>
-        <li>
-          <div class="icon icon-chat"></div>
-          <input type="text" readonly="readonly" value="chat">
-        </li>
-        <li>
-          <div class="icon icon-checkbox"></div>
-          <input type="text" readonly="readonly" value="checkbox">
-        </li>
-        <li>
-          <div class="icon icon-close"></div>
-          <input type="text" readonly="readonly" value="close">
-        </li>
-        <li>
-          <div class="icon icon-content"></div>
-          <input type="text" readonly="readonly" value="content">
-        </li>
-        <li>
-          <div class="icon icon-course"></div>
-          <input type="text" readonly="readonly" value="course">
-        </li>
-        <li>
-          <div class="icon icon-download"></div>
-          <input type="text" readonly="readonly" value="download">
-        </li>
-        <li>
-          <div class="icon icon-email"></div>
-          <input type="text" readonly="readonly" value="email">
-        </li>
-        <li>
-          <div class="icon icon-event"></div>
-          <input type="text" readonly="readonly" value="event">
-        </li>
-        <li>
-          <div class="icon icon-phone"></div>
-          <input type="text" readonly="readonly" value="phone">
-        </li>
-        <li>
-          <div class="icon icon-nav-down"></div>
-          <input type="text" readonly="readonly" value="nav-down">
-        </li>
-        <li>
-          <div class="icon icon-menu"></div>
-          <input type="text" readonly="readonly" value="menu">
-        </li>
-        <li>
-          <div class="icon icon-medialaptop"></div>
-          <input type="text" readonly="readonly" value="medialaptop">
-        </li>
-        <li>
-          <div class="icon icon-link-arrow"></div>
-          <input type="text" readonly="readonly" value="link-arrow">
-        </li>
-        <li>
-          <div class="icon icon-link"></div>
-          <input type="text" readonly="readonly" value="link">
-        </li>
-        <li>
-          <div class="icon icon-jump-up"></div>
-          <input type="text" readonly="readonly" value="jump-up">
-        </li>
-        <li>
-          <div class="icon icon-jump-down"></div>
-          <input type="text" readonly="readonly" value="jump-down">
-        </li>
-        <li>
-          <div class="icon icon-favourited"></div>
-          <input type="text" readonly="readonly" value="favourited">
-        </li>
-        <li>
-          <div class="icon icon-favorite"></div>
-          <input type="text" readonly="readonly" value="favorite">
-        </li>
-        <li>
-          <div class="icon icon-faqs"></div>
-          <input type="text" readonly="readonly" value="faqs">
-        </li>
-        <li>
-          <div class="icon icon-exit"></div>
-          <input type="text" readonly="readonly" value="exit">
-        </li>
-        <li>
-          <div class="icon icon-qa"></div>
-          <input type="text" readonly="readonly" value="qa">
-        </li>
-        <li>
-          <div class="icon icon-search"></div>
-          <input type="text" readonly="readonly" value="search">
-        </li>
-        <li>
-          <div class="icon icon-self-care"></div>
-          <input type="text" readonly="readonly" value="self-care">
-        </li>
-        <li>
-          <div class="icon icon-share"></div>
-          <input type="text" readonly="readonly" value="share">
-        </li>
-        <li>
-          <div class="icon icon-support"></div>
-          <input type="text" readonly="readonly" value="support">
-        </li>
-        <li>
-          <div class="icon icon-headphone"></div>
-          <input type="text" readonly="readonly" value="headphone">
-        </li>
-        <li>
-          <div class="icon icon-tick"></div>
-          <input type="text" readonly="readonly" value="tick">
-        </li>
-        <li>
-          <div class="icon icon-topics"></div>
-          <input type="text" readonly="readonly" value="topics">
-        </li>
-        <li>
-          <div class="icon icon-unlock"></div>
-          <input type="text" readonly="readonly" value="unlock">
-        </li>
-        <li>
-          <div class="icon icon-user"></div>
-          <input type="text" readonly="readonly" value="user">
-        </li>
-        <li>
-          <div class="icon icon-video"></div>
-          <input type="text" readonly="readonly" value="video">
-        </li>
-      </ul>
-      </section>
+            <section class="container">
+                <h2>Summary cards</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <article class="summary-card summary-card--large">
+                            <div class="summary-card__image"><img src="/images/content/sad-child.jpg" /></div>
+                            <div class="summary-card__body">
+                                <strong class="summary-card__kicker kicker kicker--small">Resources</strong>
+                                <span class="icon icon-article summary-card__icon"></span>
+                                <h2 class="summary-card__title">Large summary card with image</h2>
+                                <p class="summary-card__byline"><strong>By:</strong> Dr Tamara Scully</p>
+                                <p class="summary-card__text">
+                                    You know the drill – you have come back from the beach; everyone is tired and your youngest child
+                                    refuses to get her pyjamas on. She is shouting and screaming and kicking her little legs at anything she
+                                    can reach. She is experiencing a…
+                                </p>
+                                <footer class="summary-card__footer">
+                                    <a class="badge" href="#">Mental Health</a><a class="badge" href="#">Parents</a>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2 class="h3">Featured Content</h2>
+                        <article class="summary-card">
+                            <div class="summary-card__body">
+                                <strong class="summary-card__kicker kicker kicker--small">Podcast</strong>
+                                <span class="icon icon-headphone summary-card__icon"></span>
+                                <h2 class="summary-card__title">Regular summary card</h2>
+                                <p class="summary-card__byline"><strong>With:</strong> Rochelle Watson</p>
+                                <p class="summary-card__text">
+                                    Rochelle Watson, a young person who was supported by the Our Time Charity, shares her story of living
+                                    with a parent with a mental illness. Rochelle shares her advice for young people who find themselves in
+                                    a similar situation, how to navigate stigma and everyday discrimination, and how to deal with peer
+                                    rejection and social isolation in the context of mental illness. This is an honest, thought-provoking
+                                    conversation which we hope will offer some insight into the experiences of children and young people
+                                    with mental illness in the family.
+                                </p>
+                                <footer class="summary-card__footer">
+                                    <a class="badge" href="#">Mental Health</a><a class="badge" href="#">Mental Illness</a>
+                                </footer>
+                            </div>
+                        </article>
+                        <article class="summary-card">
+                            <div class="summary-card__body">
+                                <strong class="summary-card__kicker kicker kicker--small">Resources</strong>
+                                <span class="icon icon-headphone summary-card__icon"></span>
+                                <h2 class="summary-card__title">Parental Mental Illness</h2>
+                                <p class="summary-card__byline"><strong>With:</strong> Dympna Cunnane</p>
+                                <p class="summary-card__text">
+                                    We invited Dympna Cunnane, a psychologist and the Chief Executive of the Our Time Charity, to discuss
+                                    parental mental illness and how to support families in need. Dympna shares her advice for parents with
+                                    poor mental health on how to talk to their children about their illness. We also discuss the challenges
+                                    faced by children, how schools can help, and finally, what support parents and children need.
+                                </p>
+                                <footer class="summary-card__footer">
+                                    <a class="badge" href="#">Mental Health</a><a class="badge" href="#">Anxiety</a>
+                                </footer>
+                            </div>
+                        </article>
+                        <article class="summary-card">
+                            <div class="summary-card__body">
+                                <strong class="summary-card__kicker kicker kicker--small">Resources</strong>
+                                <span class="icon icon-article summary-card__icon"></span>
+                                <h2 class="summary-card__title">Managing Negative Thought Patterns</h2>
+                                <p class="summary-card__byline"><strong>With:</strong> Clare Nicholas</p>
+                                <p class="summary-card__text">
+                                    To mark Mental Health Awareness Week 2022, we thought we’d share this blog written by Clare Nicholas on
+                                    negative thought patterns. Clare shares her advice on how to manage negative thought patterns, practise
+                                    self-care, and notice your positive attributes. This is a great one to share with your child/pupils.
+                                </p>
+                                <footer class="summary-card__footer">
+                                    <a class="badge" href="#">Mental Health</a><a class="badge" href="#">Anxiety</a>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
+            <section class="container">
+                <h2>Summary cards with images</h2>
+                <ul class="list-reset row">
+                    <li class="col-sm col-md-6 col-xl-3 d-flex">
+                        <article class="summary-card summary-card--with-image">
+                            <div class="summary-card__image"><img src="/images/content/running.jpg" /></div>
+                            <div class="summary-card__body">
+                                <strong class="summary-card__kicker kicker kicker--small">14th September, 6:30pm</strong>
+                                <span class="icon icon-event summary-card__icon"></span>
+                                <h2 class="summary-card__title">Resilient Adults, Resilient Children</h2>
+                                <p class="summary-card__byline"><strong>With:</strong> Alicia Drummond</p>
+                                <p class="summary-card__text">
+                                    As another school year starts we thought it would be a good idea to think about how we adults look after
+                                    our wellbeing, and...
+                                </p>
+                                <footer class="summary-card__footer">
+                                    <a class="badge" href="#">Mental Health</a><a class="badge" href="#">Anxiety</a>
+                                </footer>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="col-sm col-md-6 col-xl-3 d-flex">
+                        <article class="summary-card summary-card--with-image">
+                            <div class="summary-card__image"><img src="/images/content/sunny.jpg" /></div>
+                            <div class="summary-card__body">
+                                <strong class="summary-card__kicker kicker kicker--small">19th October, 6:30pm</strong>
+                                <span class="icon icon-event summary-card__icon"></span>
+                                <h2 class="summary-card__title">Changing The Stories We Tell Ourselves</h2>
+                                <p class="summary-card__byline"><strong>With:</strong> Alicia Drummond</p>
+                                <p class="summary-card__text">
+                                    The stories we are told, books we read, poems, family sagas, myths, legends, song lyrics, comics, and
+                                    journals contribute...
+                                </p>
+                                <footer class="summary-card__footer">
+                                    <a class="badge" href="#">Mental Health</a><a class="badge" href="#">Anxiety</a>
+                                </footer>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="col-sm col-md-6 col-xl-3 d-flex">
+                        <article class="summary-card summary-card--with-image">
+                            <div class="summary-card__image"><img src="/images/content/food.jpg" /></div>
+                            <div class="summary-card__body">
+                                <strong class="summary-card__kicker kicker kicker--small">2nd November, 6:30pm</strong>
+                                <span class="icon icon-event summary-card__icon"></span>
+                                <h2 class="summary-card__title">Nutrition & Health For The Younger Years</h2>
+                                <p class="summary-card__byline"><strong>With:</strong> Tina Lond-Caulk</p>
+                                <p class="summary-card__text">
+                                    We’ve invited Tina Lond-Caulk, a leading UK expert on child and teenage health and a qualified
+                                    nutritionist of 20 years, to talk...
+                                </p>
+                                <footer class="summary-card__footer">
+                                    <a class="badge" href="#">Mental Health</a><a class="badge" href="#">Anxiety</a>
+                                </footer>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="col-sm col-md-6 col-xl-3 d-flex">
+                        <article class="summary-card summary-card--with-image">
+                            <div class="summary-card__image"><img src="/images/content/lost.jpg" /></div>
+                            <div class="summary-card__body">
+                                <strong class="summary-card__kicker kicker kicker--small">7th December, 6:30pm</strong>
+                                <span class="icon icon-event summary-card__icon"></span>
+                                <h2 class="summary-card__title">An Authentic Insight Into Understanding Depression & How To Prevent It</h2>
+                                <p class="summary-card__byline"><strong>With:</strong> Jeremy Thomas</p>
+                                <p class="summary-card__text">While many families will be looking forward to their first...</p>
+                                <footer class="summary-card__footer">
+                                    <a class="badge" href="#">Mental Health</a><a class="badge" href="#">Anxiety</a>
+                                </footer>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="container">
+                <h2>Icons</h2>
+                <ul class="glyphs css-mapping list-reset">
+                    <li class="d-inline-flex">
+                        <div class="icon icon-arrowdown"></div>
+                        <input type="text" readonly="readonly" value="arrowdown" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-arrowleft"></div>
+                        <input type="text" readonly="readonly" value="arrowleft" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-arrowright"></div>
+                        <input type="text" readonly="readonly" value="arrowright" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-arrowup"></div>
+                        <input type="text" readonly="readonly" value="arrowup" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-article"></div>
+                        <input type="text" readonly="readonly" value="article" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-chat"></div>
+                        <input type="text" readonly="readonly" value="chat" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-checkbox"></div>
+                        <input type="text" readonly="readonly" value="checkbox" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-close"></div>
+                        <input type="text" readonly="readonly" value="close" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-content"></div>
+                        <input type="text" readonly="readonly" value="content" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-course"></div>
+                        <input type="text" readonly="readonly" value="course" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-download"></div>
+                        <input type="text" readonly="readonly" value="download" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-email"></div>
+                        <input type="text" readonly="readonly" value="email" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-event"></div>
+                        <input type="text" readonly="readonly" value="event" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-phone"></div>
+                        <input type="text" readonly="readonly" value="phone" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-nav-down"></div>
+                        <input type="text" readonly="readonly" value="nav-down" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-menu"></div>
+                        <input type="text" readonly="readonly" value="menu" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-medialaptop"></div>
+                        <input type="text" readonly="readonly" value="medialaptop" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-link-arrow"></div>
+                        <input type="text" readonly="readonly" value="link-arrow" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-link"></div>
+                        <input type="text" readonly="readonly" value="link" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-jump-up"></div>
+                        <input type="text" readonly="readonly" value="jump-up" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-jump-down"></div>
+                        <input type="text" readonly="readonly" value="jump-down" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-favourited"></div>
+                        <input type="text" readonly="readonly" value="favourited" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-favorite"></div>
+                        <input type="text" readonly="readonly" value="favorite" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-faqs"></div>
+                        <input type="text" readonly="readonly" value="faqs" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-exit"></div>
+                        <input type="text" readonly="readonly" value="exit" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-qa"></div>
+                        <input type="text" readonly="readonly" value="qa" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-search"></div>
+                        <input type="text" readonly="readonly" value="search" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-self-care"></div>
+                        <input type="text" readonly="readonly" value="self-care" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-share"></div>
+                        <input type="text" readonly="readonly" value="share" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-support"></div>
+                        <input type="text" readonly="readonly" value="support" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-headphone"></div>
+                        <input type="text" readonly="readonly" value="headphone" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-tick"></div>
+                        <input type="text" readonly="readonly" value="tick" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-topics"></div>
+                        <input type="text" readonly="readonly" value="topics" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-unlock"></div>
+                        <input type="text" readonly="readonly" value="unlock" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-user"></div>
+                        <input type="text" readonly="readonly" value="user" />
+                    </li>
+                    <li class="d-inline-flex">
+                        <div class="icon icon-video"></div>
+                        <input type="text" readonly="readonly" value="video" />
+                    </li>
+                </ul>
+            </section>
         </main>
 
-        <footer>
-        </footer>
-
+        <footer></footer>
+    </body>
 </html>

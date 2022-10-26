@@ -14,7 +14,6 @@ yarn
 
 ### 2. Build static files
 
-
 ```bash
 npm run build
 ```
