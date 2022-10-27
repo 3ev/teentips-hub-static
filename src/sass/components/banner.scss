@@ -1,0 +1,69 @@
+.banner {
+    position: relative;
+    padding-top: 129px;
+    padding-bottom: 129px;
+    @include media-breakpoint-up(lg) {
+        padding-top: pxtorem(160);
+        padding-bottom: pxtorem(160);
+    }
+}
+.banner__content {
+    position: relative;
+    padding: 30px;
+    @include media-breakpoint-up(lg) {
+        padding: 60px;
+    }
+    border-radius: $border-radius;
+    background: $blue-10;
+}
+.banner__title {
+    @include font-size($h3-font-size);
+}
+.banner__body {
+    font-size: $h6-font-size;
+    @include media-breakpoint-up(lg) {
+        font-size: $h5-font-size;
+    }
+}
+.banner__icon {
+    $banner-icon-desktop-font-size: 30;
+    $banner-icon-mobile-font-size: 24;
+    position: absolute;
+    right: -(pxtoem(32, $banner-icon-mobile-font-size));
+    top: -(pxtoem(32, $banner-icon-mobile-font-size));
+    height: pxtoem(64, $banner-icon-mobile-font-size);
+    width: pxtoem(64, $banner-icon-mobile-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: pxtorem($banner-icon-mobile-font-size);
+    border-radius: $border-radius;
+    background: $blue-vibrant;
+    color: $white;
+    @include media-breakpoint-up(lg) {
+        font-size: pxtorem($banner-icon-desktop-font-size);
+    }
+}
+.banner__actions {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 12px;
+}
+.banner__underlay {
+    z-index: -1;
+    position: absolute;
+    @include media-breakpoint-up(lg) {
+        top: 109px;
+        left: 0;
+    }
+    @include media-breakpoint-down(lg) {
+        top: 0;
+        left: -2.5rem;
+    }
+}
+.banner__image {
+    overflow: hidden;
+    border-radius: $border-radius;
+}
