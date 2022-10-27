@@ -29,6 +29,13 @@
     --bs-btn-hover-color: #{$green-vibrant};
     --bs-btn-hover-bg: #{$white};
 }
+.btn.btn-outline-inverse {
+    --bs-btn-border-color: #{$white};
+    --bs-btn-hover-border-color: #{$white};
+    --bs-btn-color: #{$white};
+    --bs-btn-hover-color: #{$blue};
+    --bs-btn-hover-bg: #{$white};
+}
 .btn.btn-info {
     --bs-btn-color: #{$blue};
 }
