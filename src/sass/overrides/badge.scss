@@ -1,6 +1,6 @@
-$badge-font-size: 0.75em !default;
-$badge-font-weight: $font-weight-bold !default;
-$badge-color: $white !default;
-$badge-padding-y: 0.35em !default;
-$badge-padding-x: 0.65em !default;
-$badge-border-radius: $border-radius !default;
+$badge-font-size: $h8-font-size;
+$badge-font-weight: $font-weight-normal;
+$badge-color: $blue;
+$badge-padding-y: pxtoem(4, 12);
+$badge-padding-x: pxtoem(8, 12);
+$badge-border-radius: pxtoem(4, 12);
