@@ -2,9 +2,6 @@
     @include media-breakpoint-up(lg) {
         margin-bottom: 80px;
     }
-    @include media-breakpoint-up(xxl) {
-        justify-content: space-around;
-    }
 }
 
 .hero__column-one {
