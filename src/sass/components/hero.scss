@@ -3,29 +3,33 @@
         margin-bottom: 80px;
     }
 }
-
+.hero--image-left-aligned,
+.hero--image-right-aligned {
+    margin-top: $spacer * 4;
+}
 .hero__column-one {
     @include media-breakpoint-down(lg) {
         margin-bottom: 75px;
     }
 }
 .hero__column-two {
+    position: relative;
     @include media-breakpoint-down(lg) {
         padding-bottom: 40px;
         margin-bottom: 50px;
     }
-    position: relative;
     &::before {
         content: '';
         position: absolute;
+        z-index: -1;
         width: 176px;
         height: 177px;
         left: 0;
         bottom: 0;
         background: $blue-10;
-        border-radius: 0 0 16px 0;
+        border-radius: 0 0 $border-radius 0;
         @include media-breakpoint-up(sm) {
-            border-radius: 16px;
+            border-radius: $border-radius;
         }
         @include media-breakpoint-up(lg) {
             width: 264px;
@@ -33,9 +37,35 @@
             left: auto;
             right: -129px;
         }
+        .hero--image-left-aligned &,
+        .hero--image-right-aligned & {
+            left: auto;
+            bottom: auto;
+            top: 0;
+            right: 0;
+            width: 192px;
+            height: 192px;
+            border-radius: $border-radius;
+            @include media-breakpoint-up(md) {
+                width: 248px;
+                height: 248px;
+                border-radius: 0 0 $border-radius $border-radius;
+                top: -($spacer * 4);
+            }
+        }
+        .hero--image-right-aligned & {
+            @include media-breakpoint-up(md) {
+                right: auto;
+                left: 0;
+            }
+        }
+        .hero--image-left-aligned & {
+            @include media-breakpoint-up(md) {
+                right: -130px;
+            }
+        }
     }
 }
-
 .hero__title {
     @include font-size($h1-font-size);
     margin-bottom: 24px;
@@ -47,5 +77,21 @@
 .hero__actions {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     gap: 10px;
+}
+.hero__image {
+    filter: drop-shadow(0px 24px 48px rgba(28, 37, 98, 0.25));
+    border-radius: $border-radius;
+    overflow: hidden;
+    @include media-breakpoint-down(md) {
+        width: 70%;
+        margin-top: $spacer * 2;
+    }
+    .hero--image-right-aligned & {
+        margin-left: 20%;
+        @include media-breakpoint-down(md) {
+            margin-right: 30%;
+        }
+    }
 }
