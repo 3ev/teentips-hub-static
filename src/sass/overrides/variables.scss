@@ -138,3 +138,23 @@ $paragraph-margin-bottom: 1rem;
 //
 // Modify the Bootstrap grid
 $grid-gutter-width: 2.5rem;
+
+// Spacer
+//
+// Modify the spacer elements
+$spacer: 1.25rem; // 20px
+$spacers: (
+    0: 0,
+    1: $spacer * 0.5,
+    // 10px
+    2: $spacer,
+    // 20px
+    3: $spacer * 2,
+    // 40px
+    4: $spacer * 2.5,
+    // 50px
+    5: $spacer * 4,
+    // 80px
+    6: $spacer * 5,
+    // 100px
+);

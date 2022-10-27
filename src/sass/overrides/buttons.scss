@@ -1,6 +1,6 @@
 // Buttons
 //
-// For each of Bootstrap's buttons, define text, background, and border color.
+// Bootstrap variables overrides
 
 $btn-font-size: $h6-font-size;
 $btn-padding-y: pxtoem(9, 16);
@@ -46,30 +46,3 @@ $btn-active-bg-shade-amount: 20% !default;
 $btn-active-bg-tint-amount: 20% !default;
 $btn-active-border-shade-amount: 25% !default;
 $btn-active-border-tint-amount: 10% !default;
-
-.btn .icon {
-    margin-right: 12px;
-    vertical-align: sub;
-    margin-left: -4px;
-}
-.btn.btn-primary {
-    --bs-btn-hover-bg: #{$blue-vibrant};
-    --bs-btn-hover-border-color: #{$blue-vibrant};
-}
-.btn.btn-outline-primary {
-    --bs-btn-hover-border-color: #{$blue-vibrant};
-    --bs-btn-hover-color: #{$blue-vibrant};
-    --bs-btn-hover-bg: #{$white};
-}
-.btn.btn-secondary {
-    --bs-btn-hover-bg: #{$green-vibrant};
-    --bs-btn-hover-border-color: #{$green-vibrant};
-}
-.btn.btn-outline-secondary {
-    --bs-btn-hover-border-color: #{$green-vibrant};
-    --bs-btn-hover-color: #{$green-vibrant};
-    --bs-btn-hover-bg: #{$white};
-}
-.btn.btn-info {
-    --bs-btn-color: #{$blue};
-}
