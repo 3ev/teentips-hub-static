@@ -1,4 +1,7 @@
 .hero {
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 80px;
+    }
     @include media-breakpoint-up(xxl) {
         justify-content: space-around;
     }
@@ -10,6 +13,30 @@
     }
 }
 .hero__column-two {
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+    }
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 176px;
+        height: 177px;
+        left: 0;
+        bottom: 0;
+        background: $blue-10;
+        border-radius: 0 0 16px 0;
+        @include media-breakpoint-up(sm) {
+            border-radius: 16px;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 264px;
+            height: 265px;
+            left: auto;
+            right: -129px;
+        }
+    }
 }
 
 .hero__title {
