@@ -35,6 +35,7 @@
 
 // 4. Component variable overrides
 @import './overrides/buttons';
+@import './overrides/badge';
 
 // 5. Include any optional Bootstrap components as you like
 @import '../../node_modules/bootstrap/scss/root';
@@ -45,6 +46,7 @@
 @import '../../node_modules/bootstrap/scss/bootstrap-grid';
 @import '../../node_modules/bootstrap/scss/containers';
 @import '../../node_modules/bootstrap/scss/buttons';
+@import '../../node_modules/bootstrap/scss/badge';
 
 // 6.Custom styling
 @import './helpers/list-reset';
@@ -57,3 +59,4 @@
 @import './components/summary-card';
 @import './components/hero';
 @import './components/buttons';
+@import './components/badge';

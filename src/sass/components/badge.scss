@@ -1,0 +1,9 @@
+.badge {
+    line-height: 1.4em;
+    background-color: $darkblue-5;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
