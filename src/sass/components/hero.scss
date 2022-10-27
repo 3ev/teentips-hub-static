@@ -1,4 +1,7 @@
 .hero {
+    @include media-breakpoint-up(xxl) {
+        justify-content: space-around;
+    }
 }
 
 .hero__column-one {
