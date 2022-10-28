@@ -1,0 +1,11 @@
+.featured-content-listing__title {
+    font-size: $h4-font-size;
+    border-bottom: 1px solid $blue;
+    padding-bottom: pxtorem(12);
+    margin-bottom: pxtorem(24);
+}
+.featured-content-listing__item {
+    border-bottom: 1px solid $darkblue-10;
+    padding-bottom: pxtorem(24);
+    margin-bottom: pxtorem(24);
+}
