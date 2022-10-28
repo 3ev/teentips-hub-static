@@ -1,5 +1,7 @@
 // Button CSS
 .btn {
+    padding-top: pxtorem(10);
+    padding-bottom: pxtorem(8);
     @include media-breakpoint-down(sm) {
         display: block;
         text-align: center;
