@@ -1,24 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Sans:wght@400;700&display=swap";
-
-@font-face {
-    font-family: AtkinsonHyperlegible;
-    src: url("/fonts/atkinson-hyperlegible/EOT/Atkinson-Hyperlegible-Regular-102.eot"); /* IE9 Compat Modes */
-    src:
-        url("/fonts/atkinson-hyperlegible/EOT/Atkinson-Hyperlegible-Regular-102.eot")
-        format("embedded-opentype"),
-        url("/fonts/atkinson-hyperlegible/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2")
-        format("woff2"),
-        url("/fonts/atkinson-hyperlegible/WOFF/Atkinson-Hyperlegible-Regular-102.woff")
-        format("woff"),
-        url("/fonts/atkinson-hyperlegible/TTF/Atkinson-Hyperlegible-Regular-102")
-        format("truetype"),
-        url("/fonts/atkinson-hyperlegible/SVG/Atkinson-Hyperlegible-Regular-102")
-        format("svg"); /* Legacy iOS */
-
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
+@import "./common/fonts";
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../node_modules/bootstrap/scss/functions";
