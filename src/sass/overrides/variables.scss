@@ -1,10 +1,8 @@
 // Variables
-//
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
-//
 $blue: #334fb4;
 $blue-vibrant: #349ce2;
 $blue-xbright: #6cf;
@@ -80,7 +78,6 @@ $theme-colors: map-merge(
 );
 
 // Typography
-//
 $font-family-sans-serif: "DM Sans", "Helvetica Neue", "Noto Sans",
     "Liberation Sans", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
@@ -111,12 +108,10 @@ $headings-color: $blue;
 $border-radius: 16px;
 
 // Body
-//
 // Settings for the `<body>` element.
 $body-color: $black;
 
 // Links
-//
 // Style anchor elements.
 $link-color: $primary;
 $link-decoration: underline;
@@ -125,17 +120,14 @@ $link-hover-color: $link-color;
 $link-hover-decoration: null;
 
 // Paragraphs
-//
 // Style p element.
 $paragraph-margin-bottom: 1rem;
 
 // Grid
-//
 // Modify the Bootstrap grid
 $grid-gutter-width: 2.5rem;
 
 // Spacer
-//
 // Modify the spacer elements
 $spacer: 1.25rem; // 20px
 $spacers: (
