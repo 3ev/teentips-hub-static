@@ -12,6 +12,7 @@
     font-style: normal;
 }
 
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
 [data-icon]::before {
     font-family: teen-tips !important;
     content: attr(data-icon);
@@ -37,6 +38,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+/* stylelint-enable font-family-no-missing-generic-family-keyword */
 
 .icon-arrowdown::before {
     content: "\61";
