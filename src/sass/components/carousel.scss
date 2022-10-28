@@ -1,0 +1,74 @@
+.carousel {
+    background: $blue;
+    color: $white;
+    overflow: hidden;
+}
+
+.carousel__item {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include media-breakpoint-up(md) {
+        align-items: center;
+        padding-top: 96px;
+        padding-bottom: 97px;
+    }
+}
+.carousel__body {
+    padding-top: 15px;
+    margin-top: -15px;
+    padding-left: 16px;
+    margin-left: -16px;
+    padding-bottom: pxtorem(15);
+    margin-bottom: 0;
+    background: url(/images/ui/quote.svg) no-repeat,
+    url(/images/ui/quote.svg) bottom right no-repeat;
+    background-size: 66px auto;
+    font-size: $h6-font-size;
+    font-family: $font-family-sans-serif;
+    font-weight: 500;
+    @include media-breakpoint-up(md) {
+        padding-top: 25px;
+        margin-top: -25px;
+        padding-left: 45px;
+        margin-left: -45px;
+        padding-bottom: pxtorem(25);
+        font-size: pxtorem(24);
+        background: url(/images/ui/quote.svg) no-repeat,
+        url(/images/ui/quote.svg) bottom right 30% no-repeat;
+        background-size: 110px auto;
+    }
+}
+.carousel__byline {
+    font-size: $h7-font-size;
+    font-family: $font-family-sans-serif;
+    font-weight: bold;
+}
+.carousel__image {
+    border-radius: $border-radius;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        width: 80.5%;
+        padding-bottom: 80.5%;
+        position: absolute;
+        bottom: -30px;
+        right: -35px;
+        background: rgba($darkblue,0.2);
+        border-radius: $border-radius;
+        @include media-breakpoint-up(md) {
+            width: 69%;
+            padding-bottom: 69%;
+            bottom: -100px;
+            right: auto;
+            left: -111px;
+            border-radius: $border-radius $border-radius 0 0;
+        }
+
+    }
+    img {
+        position: relative;
+        z-index: 2;
+    }
+}
