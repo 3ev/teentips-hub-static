@@ -11,6 +11,7 @@ module.exports = {
     ],
     rules: {
         indentation: 4,
+        "selector-class-pattern": null,
         "no-empty-source": null,
         "string-quotes": "double",
         "at-rule-no-unknown": [
