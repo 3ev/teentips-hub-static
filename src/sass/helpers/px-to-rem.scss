@@ -1,13 +1,13 @@
 @use "sass:math";
 
 @function pxtorem($value) {
-    $remValue: math.div($value, 16) + rem;
+    $rem-value: math.div($value, 16) + rem;
 
-    @return $remValue;
+    @return $rem-value;
 }
 
 @function pxtoem($value, $base) {
-    $emValue: math.div($value, $base) + em;
+    $em-value: math.div($value, $base) + em;
 
-    @return $emValue;
+    @return $em-value;
 }
