@@ -1,6 +1,7 @@
 /node_modules
 /vendor
 /dist/css
+/dist/scripts
 .env
 .budfiles
 npm-debug.log
