@@ -10,6 +10,7 @@
         padding-left: 30px;
     }
 }
+
 .carousel__column-two {
     @include media-breakpoint-down(md) {
         padding-right: 30px;
@@ -27,11 +28,13 @@
     border: 0;
     color: $white;
     font-size: pxtorem(16);
+
     @include media-breakpoint-up(md) {
         left: 77px;
         font-size: pxtorem(32);
     }
 }
+
 .carousel__next {
     position: absolute;
     right: 0;
@@ -43,6 +46,7 @@
     border: 0;
     color: $white;
     font-size: pxtorem(16);
+
     @include media-breakpoint-up(md) {
         right: 77px;
         font-size: pxtorem(32);
@@ -98,7 +102,7 @@
 
 .carousel__image {
     position: relative;
-    
+
     &::after {
         content: "";
         display: block;
@@ -109,7 +113,7 @@
         right: -35px;
         background: rgba($darkblue, 0.2);
         border-radius: $border-radius;
-        
+
         @include media-breakpoint-up(md) {
             width: 69%;
             padding-bottom: 69%;
@@ -119,7 +123,7 @@
             border-radius: $border-radius $border-radius 0 0;
         }
     }
-    
+
     img {
         position: relative;
         z-index: 2;
