@@ -1,25 +1,31 @@
 .card {
     background: $darkblue-5;
     border-radius: $border-radius;
-    box-shadow: 0px 4px 18px rgba(28, 37, 98, 0.1);
+    box-shadow: 0 4px 18px rgb(28 37 98 / 10%);
     padding: 20px;
+
     @include media-breakpoint-down(sm) {
         margin-bottom: 20px;
     }
+
     @include media-breakpoint-up(sm) {
         margin-bottom: 40px;
     }
 }
+
 .card__title {
     color: $blue;
     font-size: $h6-font-size;
+
     @include media-breakpoint-down(sm) {
         margin-bottom: 4px;
     }
+
     @include media-breakpoint-up(lg) {
         font-size: $h5-font-size;
     }
 }
+
 .card__icon {
     margin-right: 10px;
     vertical-align: sub;
@@ -36,6 +42,7 @@
         top: -2px;
     }
 }
+
 .card__body {
     font-size: $h7-font-size;
     margin: 0 0 0 28px;

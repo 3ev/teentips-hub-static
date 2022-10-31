@@ -2,14 +2,17 @@
     font-size: $h6-font-size;
     margin-bottom: 4px;
     padding-right: 70px;
+
     @include media-breakpoint-up(sm) {
         padding-right: 40px;
     }
 }
+
 .summary-card__image img {
     max-width: 100%;
     height: auto;
 }
+
 .summary-card__byline {
     padding-bottom: 12px;
     margin-bottom: 12px;
@@ -17,13 +20,16 @@
     color: $blue;
     font-size: $h7-font-size;
 }
+
 .summary-card__text {
     font-size: $h7-font-size;
     margin: 0;
 }
+
 .summary-card__body {
     position: relative;
 }
+
 .summary-card__icon {
     position: absolute;
     right: 0;
@@ -38,41 +44,51 @@
     background: $blue-10;
     color: $blue;
 }
+
 .summary-card__footer {
     display: flex;
     gap: 4px;
     margin-top: 12px;
 }
+
 .summary-card--with-image {
     overflow: hidden;
     background: $white;
     border-radius: $border-radius;
-    box-shadow: 0px 4px 18px rgba(28, 37, 98, 0.1);
+    box-shadow: 0 4px 18px rgb(28 37 98 / 10%);
+
     .summary-card__body {
         margin: 30px;
     }
+
     .summary-card__text {
         font-size: $h6-font-size;
     }
 }
+
 .summary-card--large {
     .summary-card__body {
         margin: 30px;
+
         @include media-breakpoint-up(sm) {
             margin: 40px;
         }
     }
+
     .summary-card__title {
         @include media-breakpoint-up(sm) {
             font-size: $h3-font-size;
         }
     }
+
     .summary-card__text {
         font-size: $h6-font-size;
+
         @include media-breakpoint-up(sm) {
             font-size: $h5-font-size;
         }
     }
+
     .summary-card__byline {
         @include media-breakpoint-up(sm) {
             padding-bottom: 18px;

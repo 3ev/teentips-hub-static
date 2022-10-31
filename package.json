@@ -8,26 +8,36 @@
         "node": ">=16.0.0"
     },
     "scripts": {
-        "dev": "sass ./src/sass/app.scss ./dist/css/app.css -w",
-        "build": "sass ./src/sass/app.scss ./dist/css/app.css",
+        "dev": "yarn run dev:scripts && yarn run dev:styles",
+        "dev:styles": "sass ./src/sass/app.scss ./dist/css/app.css -w",
+        "dev:scripts": "webpack watch --mode development",
+        "build": "yarn run build:scripts && yarn run build:styles",
+        "build:styles": "sass ./src/sass/app.scss ./dist/css/app.css",
+        "build:scripts": "webpack",
         "server": "node ./server.js",
-        "translate": "yarn translate:pot && yarn translate:update",
-        "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"app,resources\"",
-        "translate:update": "for filename in ./resources/lang/*.po; do msgmerge -U $filename ./resources/lang/sage.pot; done; rm -f ./resources/lang/*.po~",
-        "translate:compile": "yarn translate:mo && yarn translate:js",
-        "translate:js": "wp i18n make-json ./resources/lang --pretty-print",
-        "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
+        "lint": "yarn run lint:scripts && yarn run lint:styles",
+        "lint:scripts": "eslint src/scripts",
+        "lint:styles": "stylelint \"src/sass/**/*.{css,sass,scss,sss,less}\""
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
         "@roots/bud": "6.4.5",
         "@roots/bud-sass": "^6.5.1",
-        "@roots/sage": "6.4.5",
-        "prettier": "2.7.1",
-        "sass": "^1.52.2"
+        "@roots/sage": "^6.5.3",
+        "sass": "^1.52.2",
+        "webpack-cli": "^4.10.0"
     },
     "dependencies": {
         "bootstrap": "^5.2.2",
-        "select2": "^4.1.0-rc.0"
+        "eslint": "^8.26.0",
+        "eslint-plugin-import": "^2.26.0",
+        "jquery": "^3.6.1",
+        "postcss-scss": "^4.0.5",
+        "select2": "^4.1.0-rc.0",
+        "slick-carousel": "^1.8.1",
+        "stylelint": "^14.14.0",
+        "stylelint-config-standard": "^29.0.0",
+        "stylelint-config-standard-scss": "^6.0.0",
+        "webpack": "^5.74.0"
     }
 }

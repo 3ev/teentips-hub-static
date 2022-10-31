@@ -1,28 +1,24 @@
 // Variables
-//
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+@use "sass:map";
 
 // Color system
-//
 $blue: #334fb4;
 $blue-vibrant: #349ce2;
-$blue-xbright: #66ccff;
+$blue-xbright: #6cf;
 $blue-20: #d5ebff;
 $blue-10: #ebf5ff;
 $blue-5: #f5faff;
-
 $darkblue: #2a297c;
 $darkblue-50: #8890b1;
 $darkblue-20: #cfcfda;
 $darkblue-10: #ebebef;
 $darkblue-5: #f7f7f8;
-
 $green: #397d1c;
 $green-vibrant: #7ed957;
-
 $berry: #e40259;
-$white: #ffffff;
+$white: #fff;
 $black: #343434;
 
 // Default Bootstrap colors
@@ -36,24 +32,23 @@ $yellow: #ffc107 !default;
 $green: #198754 !default;
 $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
-
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$colors: map-merge(
+$colors: map.merge(
     (
-        'blue': $blue,
-        'indigo': $indigo,
-        'purple': $purple,
-        'pink': $pink,
-        'red': $red,
-        'orange': $orange,
-        'yellow': $yellow,
-        'green': $green,
-        'teal': $teal,
-        'cyan': $cyan,
-        'white': $white,
-        'gray': $darkblue-20,
-        'gray-dark': $darkblue-50,
+        "blue": $blue,
+        "indigo": $indigo,
+        "purple": $purple,
+        "pink": $pink,
+        "red": $red,
+        "orange": $orange,
+        "yellow": $yellow,
+        "green": $green,
+        "teal": $teal,
+        "cyan": $cyan,
+        "white": $white,
+        "gray": $darkblue-20,
+        "gray-dark": $darkblue-50,
     ),
     $colors
 );
@@ -67,35 +62,34 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $darkblue-5;
 $dark: $darkblue;
-
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$theme-colors: map-merge(
+$theme-colors: map.merge(
     (
-        'primary': $primary,
-        'secondary': $secondary,
-        'success': $success,
-        'info': $info,
-        'warning': $warning,
-        'danger': $danger,
-        'light': $light,
-        'dark': $dark,
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark,
     ),
     $theme-colors
 );
 
 // Typography
-//
-$font-family-sans-serif: 'DM Sans', 'Helvetica Neue', 'Noto Sans',
-    'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
-$font-family-copy: 'AtkinsonHyperlegible', 'Helvetica Neue', 'Noto Sans',
-    'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-sans-serif: "DM Sans", "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-copy: "AtkinsonHyperlegible", "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 $font-size-base: 1.125rem;
 $line-height-base: 1.4;
 $line-height-sm: 1.25;
 $line-height-lg: 1.5;
+/* stylelint-disable number-max-precision */
 $h1-font-size: $font-size-base * 3.11111111; // 56
 $h2-font-size: $font-size-base * 2.666666666666667; // 48
 $h3-font-size: $font-size-base * 1.777777777777778; // 32
@@ -104,6 +98,7 @@ $h5-font-size: $font-size-base * 1.111111111111111; // 20
 $h6-font-size: $font-size-base * 0.8888888888888889; // 16
 $h7-font-size: $font-size-base * 0.7777777777777778; // 14
 $h8-font-size: $font-size-base * 0.6666666666666667; // 12
+/* stylelint-enable number-max-precision */
 
 $headings-margin-bottom: 1rem * 0.5;
 $headings-font-family: null;
@@ -116,12 +111,10 @@ $headings-color: $blue;
 $border-radius: 16px;
 
 // Body
-//
 // Settings for the `<body>` element.
 $body-color: $black;
 
 // Links
-//
 // Style anchor elements.
 $link-color: $primary;
 $link-decoration: underline;
@@ -130,17 +123,14 @@ $link-hover-color: $link-color;
 $link-hover-decoration: null;
 
 // Paragraphs
-//
 // Style p element.
 $paragraph-margin-bottom: 1rem;
 
 // Grid
-//
 // Modify the Bootstrap grid
 $grid-gutter-width: 2.5rem;
 
 // Spacer
-//
 // Modify the spacer elements
 $spacer: 1.25rem; // 20px
 $spacers: (
