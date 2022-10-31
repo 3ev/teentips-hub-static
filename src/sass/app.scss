@@ -27,7 +27,10 @@
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/badge";
 
-// 6.Custom styling
+// 6. Additional libraries
+@import "../../node_modules/slick-carousel/slick/slick";
+
+// 7. Custom styling
 @import "./helpers/list-reset";
 @import "./common/typography";
 @import "./common/images";
