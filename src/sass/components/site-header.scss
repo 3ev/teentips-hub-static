@@ -1,0 +1,9 @@
+.site-header {
+    background: $darkblue;
+    color: $white;
+}
+.site-header__logo {
+    overflow: hidden;
+    text-indent: -999em;
+    background: url('/images/ui/wellbeing-hub-logo.svg') 0 0 no-repeat;
+}

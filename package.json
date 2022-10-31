@@ -8,10 +8,12 @@
         "node": ">=16.0.0"
     },
     "scripts": {
-        "dev": "yarn run dev:scripts && yarn run dev:styles",
+        "dev": "yarn run dev:html && yarn run dev:scripts && yarn run dev:styles",
+        "dev:html": "npx @11ty/eleventy --watch",
         "dev:styles": "sass ./src/sass/app.scss ./dist/css/app.css -w",
         "dev:scripts": "webpack watch --mode development",
-        "build": "yarn run build:scripts && yarn run build:styles",
+        "build": "yarn run build:html && yarn run build:scripts && yarn run build:styles",
+        "build:html": "npx @11ty/eleventy",
         "build:styles": "sass ./src/sass/app.scss ./dist/css/app.css",
         "build:scripts": "webpack",
         "server": "node ./server.js",
