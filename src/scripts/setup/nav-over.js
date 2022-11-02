@@ -34,6 +34,17 @@ class NavOverItem {
         this.$navItem.on('click', function() {
             obj.click();
         });
+
+        // The sub-navigation in each pane
+        const closeAllSubNavs = this.closeAllSubNavs;
+        this.$subNavItems = this.$target.find('.js-nav-over__nav-item');
+        let subNavItems = new Array;
+        this.$subNavItems.each(function() {
+            const $subNavItem = $(this);
+            const SubNavItem = new SubNavOverItem($subNavItem, closeAllSubNavs);
+            subNavItems.push(SubNavItem);
+        });
+        this.subNavItems = subNavItems;
     }
     click(){
         if(this.isActive) {
@@ -66,6 +77,45 @@ class NavOverItem {
             return true;
         }
         return false;
+    }
+    closeAllSubNavs() {
+        const navItems = this.subNavItems;
+        for (const navItem of navItems) {
+            if(navItem.isActive) {
+                navItem.close();
+            }
+        }
+    }
+  }
+
+  class SubNavOverItem {
+    constructor($subNavItem, closeAllSubNavs) {
+        this.closeAllSubNavs = closeAllSubNavs;
+        this.$subNavItem = $subNavItem;
+        this.targetId = $subNavItem.find('a').attr('href');
+        this.$target = $(this.targetId);
+        if(this.$target.length == 0) {
+            console.error('Referenced navigation content not found: ' + this.targetId);
+        }
+        let obj = this;
+        this.$subNavItem.on('click', function() {
+            obj.click();
+        });
+
+    }
+    click(){
+        this.closeAllSubNavs();
+        this.open();
+    }
+    open() {
+        this.isActive = true;
+        this.$navItem.addClass('is-active');
+        this.$target.addClass('is-active');
+    }
+    close() {
+        this.isActive = false;
+        this.$navItem.removeClass('is-active');
+        this.$target.removeClass('is-active');
     }
   }
 

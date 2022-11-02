@@ -53,3 +53,12 @@ body.nav-over-open {
 .nav-over__nav-cta {
     padding: pxtorem(18) pxtorem(24); 
 }
+
+.nav-over__content-item {
+    padding-top: 37px;
+}
+
+.nav-over__content-heading {
+    font-size: $h4-font-size;
+    font-weight: 400;
+}
