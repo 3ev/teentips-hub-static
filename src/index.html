@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <!-- @include('partials.head') -->
-
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="stylesheet" href="/css/app.css" />
-    </head>
-
+    {% include "head.html" %}
     <body>
         {% include "site-header.html" %}
         <main>
@@ -298,48 +290,7 @@
                 </div>
             </section>
         </main>
-
-        <footer class="site-footer">
-            <h2 class="visually-hidden">Contact details</h2>
-            <section class="site-footer__primary">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6">
-                            <h3 class="site-footer__heading">Telephone</h3>
-                            <p class="site-footer__info"><a href="+44127093940">+44 (0)127093940</a></p>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 offset-lg-1">
-                            <h3 class="site-footer__heading">Email</h3>
-                            <p class="site-footer__info"><a href="mailto:info@teentips.co.uk">info@teentips.co.uk</a></p>
-                        </div>
-                        <div class="col-lg-5">
-                            <h2 class="site-footer__heading site-footer__social-heading">Follow Teen Tips</h2>
-                            <ul class="list-reset site-footer__social">
-                                <li><span class="icon icon-facebook"></span><span class="visually-hidden">Facebook</span></li>
-                                <li><span class="icon icon-twitter"></span><span class="visually-hidden">Twitter</span></li>
-                                <li><span class="icon icon-linkedin"></span><span class="visually-hidden">Linkedin</span></li>
-                                <li><span class="icon icon-youtube"></span><span class="visually-hidden">Youtube</span></li>
-                                <li><span class="icon icon-instagram"></span><span class="visually-hidden">Instagram</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="site-footer__secondary">
-                <div class="container">
-                    <p class="site-footer__minor-heading"><strong>Copyright © Teen Tips Ltd</strong></p>
-                    <nav class="site-footer__minor-menu">
-                        <ul class="list-reset">
-                            <li class="site-footer__minor-menu-item"><a href="#">Privacy Policy</a></li>
-                            <li class="site-footer__minor-menu-item"><a href="#">Safeguarding Policy</a></li>
-                            <li class="site-footer__minor-menu-item"><a href="#">Accessibility</a></li>
-                            <li class="site-footer__minor-menu-item"><a href="#">Terms & Conditions</a></li>
-                            <li class="site-footer__minor-menu-item"><a href="#">Manage Cookies</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </section>
-        </footer>
+        {% include "site-footer.html" %}
         <script src="/scripts/bundle.js"></script>
     </body>
 </html>
