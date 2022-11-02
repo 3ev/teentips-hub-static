@@ -39,6 +39,14 @@
     --bs-btn-hover-bg: #{$white};
 }
 
+.btn.btn-inverse {
+    --bs-btn-bg: #{$white};
+    --bs-btn-border-color: #{$white};
+    --bs-btn-color: #{$blue};
+    --bs-btn-hover-bg: #{$darkblue-5};
+    --bs-btn-hover-color: #{$blue};
+}
+
 .btn.btn-outline-inverse {
     --bs-btn-border-color: #{$white};
     --bs-btn-hover-border-color: #{$white};
@@ -50,6 +58,7 @@
 .btn.btn-info {
     --bs-btn-color: #{$blue};
 }
+
 .btn.btn-invisible {
     background: none;
     border: 0;
