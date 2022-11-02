@@ -4,6 +4,7 @@ import {domReady} from '@roots/sage/client';
 
 // Import components
 import Carousel from './setup/carousel';
+import StickyHeader from './setup/sticky-header';
 
 
 /**
@@ -16,6 +17,7 @@ const main = async (err) => {
   }
 
   Carousel.init();
+  StickyHeader.init();
 
 };
 
