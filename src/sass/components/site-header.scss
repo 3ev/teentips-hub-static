@@ -1,9 +1,41 @@
 .site-header {
     background: $darkblue;
     color: $white;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include media-breakpoint-up(md) {
+        padding-top: 29px;
+        padding-bottom: 29px;
+    }
 }
 .site-header__logo {
+    height: 0;
+    padding-bottom: 16.875%;
     overflow: hidden;
     text-indent: -999em;
     background: url('/images/ui/wellbeing-hub-logo.svg') 0 0 no-repeat;
+    background-size: 100% auto;
+}
+.site-header__search-button {
+    padding: pxtorem(14);
+    margin-right: 18px;
+    font-size: $h6-font-size;
+    background: none;
+    border: 0;
+    color: $white;
+}
+
+.site-header__nav-item {
+    padding: pxtorem(12) 0; 
+    background: none;
+    border: 0;
+    font-size: $h7-font-size;
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    color: $white;
+}
+.site-header__nav-item-icon {
+    padding: 0 18px 0 12px;
+    font-size: $h8-font-size;
+    vertical-align: sub;
 }
