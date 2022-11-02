@@ -36,15 +36,18 @@ class NavOverItem {
         });
 
         // The sub-navigation in each pane
-        const closeAllSubNavs = this.closeAllSubNavs;
+        const navItem = this;
         this.$subNavItems = this.$target.find('.js-nav-over__nav-item');
         let subNavItems = new Array;
         this.$subNavItems.each(function() {
             const $subNavItem = $(this);
-            const SubNavItem = new SubNavOverItem($subNavItem, closeAllSubNavs);
-            subNavItems.push(SubNavItem);
+            const subNavItem = new SubNavOverItem($subNavItem, navItem);
+            subNavItems.push(subNavItem);
         });
         this.subNavItems = subNavItems;
+
+        // Set the first subnav as active
+        this.subNavItems[0].open();
     }
     click(){
         if(this.isActive) {
@@ -89,8 +92,8 @@ class NavOverItem {
   }
 
   class SubNavOverItem {
-    constructor($subNavItem, closeAllSubNavs) {
-        this.closeAllSubNavs = closeAllSubNavs;
+    constructor($subNavItem, navItem) {
+        this.parentItem = navItem;
         this.$subNavItem = $subNavItem;
         this.targetId = $subNavItem.find('a').attr('href');
         this.$target = $(this.targetId);
@@ -101,20 +104,19 @@ class NavOverItem {
         this.$subNavItem.on('click', function() {
             obj.click();
         });
-
     }
-    click(){
-        this.closeAllSubNavs();
+    click() {
+        this.parentItem.closeAllSubNavs();
         this.open();
     }
     open() {
         this.isActive = true;
-        this.$navItem.addClass('is-active');
+        this.$subNavItem.addClass('is-active');
         this.$target.addClass('is-active');
     }
     close() {
         this.isActive = false;
-        this.$navItem.removeClass('is-active');
+        this.$subNavItem.removeClass('is-active');
         this.$target.removeClass('is-active');
     }
   }

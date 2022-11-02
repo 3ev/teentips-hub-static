@@ -6,6 +6,7 @@ import {domReady} from '@roots/sage/client';
 import Carousel from './setup/carousel';
 import StickyHeader from './setup/sticky-header';
 import NavOver from './setup/nav-over';
+import NoJS from './setup/no';
 
 
 /**
@@ -17,6 +18,7 @@ const main = async (err) => {
     console.error(err);
   }
 
+  NoJS.init();
   Carousel.init();
   StickyHeader.init();
   NavOver.init();

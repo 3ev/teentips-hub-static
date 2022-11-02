@@ -56,6 +56,12 @@ body.nav-over-open {
 
 .nav-over__content-item {
     padding-top: 37px;
+    .js & {
+        display: none;
+        &.is-active {
+            display: block;
+        }
+    }
 }
 
 .nav-over__content-heading {
