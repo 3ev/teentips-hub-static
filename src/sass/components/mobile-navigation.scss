@@ -1,0 +1,10 @@
+.mobile-navigation__trigger {
+    border: 0;
+    background: none;
+    font-size: $h5-font-size;
+    padding: 12px;
+    color: $white;
+}
+.mobile-navigation__trigger-text {
+    @include visually-hidden;
+}  

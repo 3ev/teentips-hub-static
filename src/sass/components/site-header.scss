@@ -24,6 +24,7 @@ body {
     background: url('/images/ui/wellbeing-hub-logo.svg') 0 0 no-repeat;
     background-size: 100% auto;
 }
+
 .site-header__search-button {
     padding: pxtorem(14);
     margin-right: 18px;
@@ -35,4 +36,24 @@ body {
 
 .site-header__nav-item-icon {
     font-size: $h8-font-size;
+}
+
+// Mobile navigation
+@include media-breakpoint-down(xl) {
+    .js {
+        .site-header__search-button {
+            display: none;
+        }
+        .site-header__nav {
+            display: none !important;
+        }
+        .site-header__account-button {
+            border: 0;
+            font-size: $h5-font-size;
+            padding: 12px;
+        }
+        .site-header__account-button-text {
+            @include visually-hidden;
+        }
+    }
 }
