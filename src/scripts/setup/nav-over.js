@@ -31,7 +31,8 @@ class NavOverItem {
             console.error('Referenced navigation content not found!')
         }
         let obj = this;
-        this.$navItem.on('click', function() {
+        this.$navItem.on('click', function(e) {
+            e.preventDefault();
             obj.click();
         });
 

@@ -7,6 +7,7 @@ import Carousel from './setup/carousel';
 import StickyHeader from './setup/sticky-header';
 import NavOver from './setup/nav-over';
 import NoJS from './setup/no';
+import MobileNav from './setup/mobile-navigation';
 
 
 /**
@@ -22,6 +23,11 @@ const main = async (err) => {
   Carousel.init();
   StickyHeader.init();
   NavOver.init();
+  $('.js-mobile-navigation__trigger').each(function() {
+        const $body = $('body');
+        const $trigger = $(this);
+        new MobileNav($trigger, $body);
+    });
 
 };
 
