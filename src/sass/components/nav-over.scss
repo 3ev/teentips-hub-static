@@ -8,7 +8,7 @@ body.nav-over-open {
     padding-top: 114px; // Temporary, height of site header
     left: 0;
     right: 0;
-    z-index: 9;
+    z-index: 12;
     overflow-y: auto;
     background: $darkblue-5;
     display: none;
@@ -27,6 +27,12 @@ body.nav-over-open {
     bottom: 0;
     overflow-y: auto;
     background: $darkblue-10;
+    @include media-breakpoint-down(xl) {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 }
 
 .nav-over__nav-item {
@@ -41,7 +47,7 @@ body.nav-over-open {
         font-weight: 700;
         border-bottom-color: $darkblue-5;
     }
-
+    
     a {
         text-decoration: none;
         &:hover {

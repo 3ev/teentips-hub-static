@@ -31,7 +31,8 @@
 @import "../../node_modules/slick-carousel/slick/slick";
 
 // 7. Custom styling
-@import "./helpers/list-reset";
+@import "./utilities/list-reset";
+@import "./utilities/rotate";
 @import "./common/typography";
 @import "./common/images";
 @import "./components/icons";

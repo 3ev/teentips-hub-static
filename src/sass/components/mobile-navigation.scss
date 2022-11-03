@@ -62,3 +62,25 @@ body.mobile-navigation-open {
         text-decoration: none;
     }
 }
+.mobile-navigation__sub-menu {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background: $darkblue-5;
+    z-index: 12;
+    &.is-open {
+        pointer-events: initial;
+        opacity: 1;
+    }  
+}
+
+.mobile-navigation__header-title {
+    font-size: $h6-font-size;
+    font-weight: 400;
+    text-align: center;
+}

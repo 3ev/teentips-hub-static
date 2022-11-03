@@ -38,28 +38,44 @@
     </div>
 </header>
 <div id="mobile-navigation" class="mobile-navigation">
-    <div class="mobile-navigation__header d-flex justify-content-between">
+    <div class="mobile-navigation__header d-flex align-items-center justify-content-between">
         <a class="mobile-navigation__header-action" href="#"><span class="icon icon-search"></span><span class="visually-hidden">Search</span></a>
         <a class="mobile-navigation__header-action js-mobile-navigation__close-trigger" href="#mobile-navigation-trigger"><span class="icon icon-close"></span><span class="visually-hidden">Close</span></a>
     </div>
     <div class="mobile-navigation__menu">
         <ul class="list-reset">
-            <li class="mobile-navigation__menu-item"><a href="#nav-courses">Courses</a></li>
-            <li class="mobile-navigation__menu-item"><a href="#nav-resources">Resources</a></li>
-            <li class="mobile-navigation__menu-item"><a href="#nav-events">Events</a></li>
-            <li class="mobile-navigation__menu-item"><a href="#nav-faq">FAQ</a></li>
-            <li class="mobile-navigation__menu-item"><a href="#nav-support">Support</a></li>
+            <li class="js-mobile-navigation__menu-item mobile-navigation__menu-item"><a href="#mobile-nav-courses">Courses</a></li>
+            <li class="js-mobile-navigation__menu-item mobile-navigation__menu-item"><a href="#mobile-nav-resources">Resources</a></li>
+            <li class="js-mobile-navigation__menu-item mobile-navigation__menu-item"><a href="#mobile-nav-events">Events</a></li>
+            <li class="js-mobile-navigation__menu-item mobile-navigation__menu-item"><a href="#mobile-nav-faq">FAQ</a></li>
+            <li class="js-mobile-navigation__menu-item mobile-navigation__menu-item"><a href="#mobile-nav-support">Support</a></li>
+        </ul>
+    </div>
+</div>
+<div id="mobile-nav-courses" class="mobile-navigation__menu mobile-navigation__sub-menu">
+    <div class="mobile-navigation__header d-flex align-items-center justify-content-between">
+        <a class="mobile-navigation__header-action rotate-180" href="#mobile-navigation"><span class="icon icon-link-arrow"></span><span class="visually-hidden">Back to main menu</span></a>
+        <h2 class="mobile-navigation__header-title">Courses</h2>
+        <a class="mobile-navigation__header-action js-mobile-navigation__close-trigger" href="#mobile-navigation-trigger"><span class="icon icon-close"></span><span class="visually-hidden">Close</span></a>
+    </div>
+    <div class="mobile-navigation__menu">
+        <ul class="list-reset">
+            <li class="js-mobile-navigation__menu-item mobile-navigation__menu-item"><a href="#mobile-nav-courses">Featured Courses</a></li>
+            <li class="js-mobile-navigation__menu-item mobile-navigation__menu-item"><a href="#mobile-nav-resources">Staff Course</a></li>
+            <li class="js-mobile-navigation__menu-item mobile-navigation__menu-item"><a href="#mobile-nav-events">Gender-Based Violence Training</a></li>
+            <li class="js-mobile-navigation__menu-item mobile-navigation__menu-item"><a href="#mobile-nav-faq">Our Complete Parenting Courses</a></li>
+            <li class="js-mobile-navigation__menu-item mobile-navigation__menu-item"><a href="#mobile-nav-support">Parent Events Talks</a></li>
         </ul>
     </div>
 </div>
 <div id="nav-courses" class="nav-over">
     <div class="container nav-over__container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-xl-3">
                 <nav class="nav-over__nav">
                     <ul class="list-reset">
                         <li class="js-nav-over__nav-item nav-over__nav-item"><a href="#nav-over-content-featured-courses">Featured Courses</a></li>
-                        <li class="js-nav-over__nav-item nav-over__nav-item"><a href="#nav-over-content-staff-course">Staff Course</a></li>
+                        <li class="js-nav-over__nav-item nav-over__nav-item"><a href="/course-xl">Staff Course</a></li>
                         <li class="js-nav-over__nav-item nav-over__nav-item"><a href="#nav-over-content-gender-based-violence-training">Gender-Based Violence Training</a></li>
                         <li class="js-nav-over__nav-item nav-over__nav-item"><a href="#nav-over-content-our-complete-parenting-courses">Our Complete Parenting Courses</a></li>
                         <li class="js-nav-over__nav-item nav-over__nav-item"><a href="#nav-over-content-parents-events-talks">Parent Events Talks</a></li>
@@ -69,7 +85,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="col-8 offset-1 nav-over__content">
+            <div class="col-xl-8 offset-xl-1 nav-over__content">
                 <div id="nav-over-content-featured-courses" class="nav-over__content-item">
                     <h2 class="nav-over__content-heading">Featured Courses</h2>
                 </div>

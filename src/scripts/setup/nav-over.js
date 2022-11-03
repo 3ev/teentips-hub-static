@@ -9,6 +9,8 @@ const NavOver = {
             const navItem = new NavOverItem($navItem, $body, closeAllNavs);
             navItems.push(navItem);
         })
+        this.setPlacement();
+        window.addEventListener('resize', this.setPlacement);
     },
     closeAllNavs() {
         for (const navItem of navItems) {
@@ -17,6 +19,15 @@ const NavOver = {
             }
         }
     },
+    setPlacement() {
+        const siteHeaderHeight = $('.js-site-header').css('height');
+        for (const navItem of navItems) {
+            const $target = navItem.$target;
+            $target.css('padding-top', siteHeaderHeight);
+            const $navOverNav = $target.find('.nav-over__nav');
+            $navOverNav.css('top', siteHeaderHeight);
+        }
+    }
 };
 
 class NavOverItem {
@@ -96,13 +107,18 @@ class NavOverItem {
     constructor($subNavItem, navItem) {
         this.parentItem = navItem;
         this.$subNavItem = $subNavItem;
-        this.targetId = $subNavItem.find('a').attr('href');
-        this.$target = $(this.targetId);
+        this.href = $subNavItem.find('a').attr('href');
+        const firstChar = Array.from(this.href)[0]; 
+        if(firstChar !== '#') {
+            return;
+        }
+        this.$target = $(this.href);
         if(this.$target.length == 0) {
             console.error('Referenced navigation content not found: ' + this.targetId);
         }
         let obj = this;
-        this.$subNavItem.on('click', function() {
+        this.$subNavItem.on('click', function(e) {
+            e.preventDefault();
             obj.click();
         });
     }
