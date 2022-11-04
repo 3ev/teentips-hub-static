@@ -36,6 +36,8 @@ body.mobile-navigation-open {
     display: block;
     padding: 12px;
     text-decoration: none;
+    font-size: $h6-font-size;
+    line-height: 1;
     .icon {
         vertical-align: sub;
     }
@@ -83,4 +85,5 @@ body.mobile-navigation-open {
     font-size: $h6-font-size;
     font-weight: 400;
     text-align: center;
+    margin: 0;
 }

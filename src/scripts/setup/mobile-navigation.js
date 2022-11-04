@@ -6,6 +6,7 @@ class MobileNav {
         this.$target = $(this.targetId);
         this.$closeTrigger = $(this.$target.find('.js-mobile-navigation__close-trigger'));
         this.$menuItems = $(this.$target.find('.js-mobile-navigation__menu-item'));
+        this.$backTriggers = $('.js-mobile-navigation__back-trigger');
         
         let obj = this;
         this.$trigger.on('click', function(e) {
@@ -20,8 +21,14 @@ class MobileNav {
             e.preventDefault();
             const targetId = $(this).find('a').attr('href');
             const $target = $(targetId);
-            obj.openNavItem($target)
+            obj.openNavItem($target);
         });
+        this.$backTriggers.on('click', function(e) {
+            e.preventDefault();
+            const $this = $(this);
+            obj.closeSelf($this);
+        });
+        
         // this.setPlacement();
         // window.addEventListener('resize', this.setPlacement);
     }
@@ -41,6 +48,14 @@ class MobileNav {
     }
     openNavItem($target) {
         $target.addClass('is-open');
+    }
+    closeNavItem($target) {
+        $target.removeClass('is-open');
+    }
+    closeSelf($this){
+        const targetID = $this.attr('aria-controls');
+        const $target = $('#' + targetID);
+        this.closeNavItem($target);
     }
 }
 
