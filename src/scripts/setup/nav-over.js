@@ -3,12 +3,14 @@ let navItems = new Array;
 const NavOver = {
     init() {
         const closeAllNavs = this.closeAllNavs;
+        const $html = $('html, body');
+        const $overlay = $('.nav-over__overlay');
+        const $homeLink = $('.js-site-header__logo');
         $('.js-site-header__nav-item').each(function() {
-            const $html = $('html, body');
             const $navItem = $(this);
-            const navItem = new NavOverItem($navItem, $html, closeAllNavs);
+            const navItem = new NavOverItem($navItem, $html, closeAllNavs, $overlay, $homeLink);
             navItems.push(navItem);
-        })
+        });
         this.setPlacement();
         window.addEventListener('resize', this.setPlacement);
     },
@@ -31,13 +33,15 @@ const NavOver = {
 };
 
 class NavOverItem {
-    constructor($navItem, $html, closeAllNavs) {
+    constructor($navItem, $html, closeAllNavs, $overlay, $homeLink) {
         this.closeAllNavs = closeAllNavs;
         this.isActive = false;
         this.$html = $html;
+        this.$overlay = $overlay;
         this.$navItem = $navItem;
         this.targetId = $navItem.attr('href');
         this.$target = $(this.targetId);
+        this.$homeLink = $homeLink;
         if(this.$target.length == 0) {
             console.error('Referenced navigation content not found!')
         }
@@ -45,6 +49,14 @@ class NavOverItem {
         this.$navItem.on('click', function(e) {
             e.preventDefault();
             obj.click();
+        });
+        
+        this.$homeLink.on('click', function(e) {
+            obj.closeCurrentNav(e);
+        });
+        
+        this.$overlay.on('click', function(e) {
+            obj.closeCurrentNav(e);
         });
 
         // The sub-navigation in each pane
@@ -73,12 +85,19 @@ class NavOverItem {
             this.open();
         }
     }
+    closeCurrentNav(e) {
+        if(this.isActive ) {
+            e.preventDefault();
+            this.close();
+        }
+    }
     close() {
         this.isActive = false;
         this.$navItem.removeClass('btn-info');
         this.$navItem.addClass('btn-invisible');
         this.$target.removeClass('is-open');
         this.$html.removeClass('nav-over-open');
+        this.$overlay.removeClass('is-visible');
     }
     open() {
         this.isActive = true;
@@ -86,6 +105,7 @@ class NavOverItem {
         this.$navItem.removeClass('btn-invisible');
         this.$target.addClass('is-open');
         this.$html.addClass('nav-over-open');
+        this.$overlay.addClass('is-visible');
     }
     isAnotherNavOpen() {
         if(this.$html.hasClass('nav-over-open')) {
