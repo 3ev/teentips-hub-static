@@ -29,7 +29,7 @@ const NavOver = {
             const $navOverNav = $target.find('.nav-over__nav');
             $navOverNav.css('top', siteHeaderHeight);
         }
-    }
+    },
 };
 
 class NavOverItem {

@@ -14,6 +14,7 @@ module.exports = {
         "selector-class-pattern": null,
         "no-empty-source": null,
         "string-quotes": "double",
+        "no-descending-specificity": null,
         "at-rule-no-unknown": [
             true,
             {

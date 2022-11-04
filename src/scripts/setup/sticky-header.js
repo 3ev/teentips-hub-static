@@ -1,4 +1,4 @@
-import Headroom from "headroom.js";
+import Headroom from 'headroom.js';
 
 const StickyHeader = {
     init() {
@@ -14,7 +14,7 @@ const StickyHeader = {
     setPlacement() {
         const siteHeaderHeight = $('.js-site-header').css('height');
         $('body').css('padding-top', siteHeaderHeight);
-    }
+    },
 };
 
 export default StickyHeader;

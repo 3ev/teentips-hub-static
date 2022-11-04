@@ -9,6 +9,7 @@
     margin: 0;
     gap: pxtorem(8);
     font-size: $h7-font-size;
+
     @include media-breakpoint-up(sm) {
         font-size: $h6-font-size;
     }
@@ -21,8 +22,10 @@
 .membership-navigation__menu {
     font-size: $h7-font-size;
     gap: pxtorem(24);
+
     a {
         text-decoration: none;
+
         &:hover {
             text-decoration: underline;
         }
