@@ -4,7 +4,7 @@ class MobileNav {
         this.$html = $html;
         this.targetId = $trigger.attr('href');
         this.$target = $(this.targetId);
-        this.$closeTrigger = $('.js-mobile-navigation__close-trigger');
+        this.$closeTrigger = $(this.$target.find('.js-mobile-navigation__close-trigger'));
         this.$menus = $('.js-mobile-navigation');
         this.$menuItems = $('.js-mobile-navigation__menu-item');
         this.$backTriggers = $('.js-mobile-navigation__back-trigger');
@@ -63,7 +63,7 @@ class MobileNav {
         this.$trigger.removeClass('is-active');
         this.$target.removeClass('is-open');
         this.$html.removeClass('mobile-navigation-open');
-        this.$menus.each(function() {
+        this.$menuItems.each(function() {
             $(this).removeClass('is-open');
         });
     }

@@ -24,7 +24,6 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    vertical-align: sub;
 }
 
 [class^="icon-"]::before,
@@ -38,7 +37,6 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    vertical-align: sub;
 }
 /* stylelint-enable font-family-no-missing-generic-family-keyword */
 
@@ -191,42 +189,38 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url("/images/ui/facebook.svg") 0 0 no-repeat;
+    background: url('/images/ui/facebook.svg') 0 0 no-repeat;
     background-size: 100% auto;
 }
-
 .icon-linkedin::before {
     content: "";
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url("/images/ui/linkedin.svg") 0 0 no-repeat;
+    background: url('/images/ui/linkedin.svg') 0 0 no-repeat;
     background-size: 100% auto;
 }
-
 .icon-twitter::before {
     content: "";
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url("/images/ui/twitter.svg") 0 0 no-repeat;
+    background: url('/images/ui/twitter.svg') 0 0 no-repeat;
     background-size: 100% auto;
 }
-
 .icon-youtube::before {
     content: "";
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url("/images/ui/youtube.svg") 0 0 no-repeat;
+    background: url('/images/ui/youtube.svg') 0 0 no-repeat;
     background-size: 100% auto;
 }
-
 .icon-instagram::before {
     content: "";
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url("/images/ui/instagram.svg") 0 0 no-repeat;
+    background: url('/images/ui/instagram.svg') 0 0 no-repeat;
     background-size: 100% auto;
 }

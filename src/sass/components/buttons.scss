@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
-
+    
     @include media-breakpoint-down(sm) {
         display: block;
         text-align: center;
@@ -12,7 +12,7 @@
     }
 }
 
-.btn [class^="icon-"]::before,
+.btn [class^=icon-]::before, 
 .btn [class*=" icon-"]::before {
     vertical-align: middle;
 }
@@ -68,7 +68,6 @@
     background: none;
     border: 0;
     color: $white;
-
     &:hover {
         background: $blue;
     }

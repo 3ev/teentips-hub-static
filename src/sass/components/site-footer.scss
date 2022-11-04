@@ -1,28 +1,22 @@
 .site-footer {
     font-family: $font-family-sans-serif;
-
-    p {
+    P {
         font-family: $font-family-sans-serif;
     }
-
     a {
         text-decoration: none;
-
         &:hover,
         &focus {
             text-decoration: underline;
         }
-
         &:hover {
             color: $blue-xbright;
         }
     }
 }
-
 .site-footer__primary {
     background: $blue-5;
     padding: $spacer 0;
-
     @include media-breakpoint-up(lg) {
         padding: ($spacer * 1.5) 0;
     }
@@ -33,7 +27,6 @@
     font-size: $h7-font-size;
     color: $blue;
     font-weight: 400;
-
     @include media-breakpoint-up(lg) {
         font-size: $h6-font-size;
     }
@@ -45,29 +38,24 @@
     font-weight: $headings-font-weight;
     color: $blue;
     margin-bottom: 0;
-
     @include media-breakpoint-down(lg) {
         margin-bottom: pxtorem(24);
     }
-
     @include media-breakpoint-up(md) {
         font-size: $h3-font-size;
-        line-height: pxtoem(38, 32);
+        line-height: pxtoem(38, 32)
     }
 }
 
 .site-footer__social {
     display: flex;
     gap: 30px;
-
     @include media-breakpoint-up(lg) {
         justify-content: flex-end;
     }
 }
-
 .site-footer__social-heading {
     margin-bottom: pxtorem(12);
-
     @include media-breakpoint-up(lg) {
         text-align: right;
     }
@@ -83,7 +71,6 @@
     color: $white;
     font-size: $h8-font-size;
     font-weight: 700;
-
     @include media-breakpoint-up(md) {
         float: left;
         margin-right: 20px;
@@ -93,11 +80,9 @@
 
 .site-footer__minor-menu {
     font-size: $h8-font-size;
-
     @include media-breakpoint-up(md) {
         font-size: $h7-font-size;
     }
-
     a {
         color: $white;
     }
@@ -107,5 +92,5 @@
     display: inline;
     white-space: nowrap;
     margin-right: pxtorem(8);
-    margin-bottom: pxtorem(4);
+    margin-bottom: pxtorem(4)
 }
