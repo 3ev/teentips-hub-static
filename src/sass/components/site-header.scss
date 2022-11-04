@@ -39,13 +39,5 @@ body {
         .site-header__nav {
             display: none !important;
         }
-        .site-header__account-button {
-            border: 0;
-            font-size: $h5-font-size;
-            padding: 12px;
-        }
-        .site-header__account-button-text {
-            @include visually-hidden;
-        }
     }
 }
