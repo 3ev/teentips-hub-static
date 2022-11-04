@@ -16,7 +16,7 @@ html.mobile-navigation-open {
 
 .mobile-navigation {
     pointer-events: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -48,7 +48,7 @@ html.mobile-navigation-open {
 }
 
 .mobile-navigation__menu {
-    position: absolute;
+    position: fixed;
     top: 97px;
     bottom: 0;
     left: 0;
@@ -89,7 +89,7 @@ html.mobile-navigation-open {
 
 .mobile-navigation__sub-menu {
     pointer-events: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
