@@ -24,6 +24,7 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    vertical-align: sub;
 }
 
 [class^="icon-"]::before,
@@ -37,6 +38,7 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    vertical-align: sub;
 }
 /* stylelint-enable font-family-no-missing-generic-family-keyword */
 
