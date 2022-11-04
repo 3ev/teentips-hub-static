@@ -1,4 +1,4 @@
-body.mobile-navigation-open {
+html.mobile-navigation-open {
     overflow: hidden;
 }
 
@@ -109,4 +109,8 @@ body.mobile-navigation-open {
     font-weight: 400;
     text-align: center;
     margin: 0;
+}
+
+.mobile-navigation__cta {
+    padding: 30px;
 }

@@ -25,9 +25,9 @@ const main = async (err) => {
     NavOver.init();
 
     $('.js-mobile-navigation__trigger').each(function() {
-        const $body = $('body');
+        const $html = $('html, body');
         const $trigger = $(this);
-        new MobileNav($trigger, $body);
+        new MobileNav($trigger, $html);
     });
 
 };

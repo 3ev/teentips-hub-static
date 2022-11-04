@@ -59,6 +59,11 @@
     --bs-btn-color: #{$blue};
 }
 
+.btn.btn-mid-light {
+    --bs-btn-bg: #{$darkblue-10};
+    --bs-btn-color: #{$blue};
+}
+
 .btn.btn-invisible {
     background: none;
     border: 0;

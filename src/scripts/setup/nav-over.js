@@ -4,9 +4,9 @@ const NavOver = {
     init() {
         const closeAllNavs = this.closeAllNavs;
         $('.js-site-header__nav-item').each(function() {
-            const $body = $('body');
+            const $html = $('html, body');
             const $navItem = $(this);
-            const navItem = new NavOverItem($navItem, $body, closeAllNavs);
+            const navItem = new NavOverItem($navItem, $html, closeAllNavs);
             navItems.push(navItem);
         })
         this.setPlacement();
@@ -31,10 +31,10 @@ const NavOver = {
 };
 
 class NavOverItem {
-    constructor($navItem, $body, closeAllNavs) {
+    constructor($navItem, $html, closeAllNavs) {
         this.closeAllNavs = closeAllNavs;
         this.isActive = false;
-        this.$body = $body;
+        this.$html = $html;
         this.$navItem = $navItem;
         this.targetId = $navItem.attr('href');
         this.$target = $(this.targetId);
@@ -78,17 +78,17 @@ class NavOverItem {
         this.$navItem.removeClass('btn-info');
         this.$navItem.addClass('btn-invisible');
         this.$target.removeClass('is-open');
-        this.$body.removeClass('nav-over-open');
+        this.$html.removeClass('nav-over-open');
     }
     open() {
         this.isActive = true;
         this.$navItem.addClass('btn-info');
         this.$navItem.removeClass('btn-invisible');
         this.$target.addClass('is-open');
-        this.$body.addClass('nav-over-open');
+        this.$html.addClass('nav-over-open');
     }
     isAnotherNavOpen() {
-        if(this.$body.hasClass('nav-over-open')) {
+        if(this.$html.hasClass('nav-over-open')) {
             return true;
         }
         return false;
