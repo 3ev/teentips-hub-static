@@ -1,8 +1,10 @@
 // Button CSS
 .btn {
-    padding-top: pxtorem(10);
-    padding-bottom: pxtorem(8);
-
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    
     @include media-breakpoint-down(sm) {
         display: block;
         text-align: center;
@@ -10,10 +12,9 @@
     }
 }
 
-.btn .icon {
-    margin-right: 12px;
-    vertical-align: sub;
-    margin-left: -4px;
+.btn [class^=icon-]::before, 
+.btn [class*=" icon-"]::before {
+    vertical-align: middle;
 }
 
 .btn.btn-primary {
@@ -38,6 +39,14 @@
     --bs-btn-hover-bg: #{$white};
 }
 
+.btn.btn-inverse {
+    --bs-btn-bg: #{$white};
+    --bs-btn-border-color: #{$white};
+    --bs-btn-color: #{$blue};
+    --bs-btn-hover-bg: #{$darkblue-5};
+    --bs-btn-hover-color: #{$blue};
+}
+
 .btn.btn-outline-inverse {
     --bs-btn-border-color: #{$white};
     --bs-btn-hover-border-color: #{$white};
@@ -48,4 +57,18 @@
 
 .btn.btn-info {
     --bs-btn-color: #{$blue};
+}
+
+.btn.btn-mid-light {
+    --bs-btn-bg: #{$darkblue-10};
+    --bs-btn-color: #{$blue};
+}
+
+.btn.btn-invisible {
+    background: none;
+    border: 0;
+    color: $white;
+    &:hover {
+        background: $blue;
+    }
 }

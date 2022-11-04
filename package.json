@@ -8,10 +8,12 @@
         "node": ">=16.0.0"
     },
     "scripts": {
-        "dev": "yarn run dev:scripts && yarn run dev:styles",
+        "dev": "yarn run dev:html && yarn run dev:scripts && yarn run dev:styles",
+        "dev:html": "npx @11ty/eleventy --watch",
         "dev:styles": "sass ./src/sass/app.scss ./dist/css/app.css -w",
         "dev:scripts": "webpack watch --mode development",
-        "build": "yarn run build:scripts && yarn run build:styles",
+        "build": "yarn run build:html && yarn run build:scripts && yarn run build:styles",
+        "build:html": "npx @11ty/eleventy",
         "build:styles": "sass ./src/sass/app.scss ./dist/css/app.css",
         "build:scripts": "webpack",
         "server": "node ./server.js",
@@ -31,6 +33,7 @@
         "bootstrap": "^5.2.2",
         "eslint": "^8.26.0",
         "eslint-plugin-import": "^2.26.0",
+        "headroom.js": "^0.12.0",
         "jquery": "^3.6.1",
         "postcss-scss": "^4.0.5",
         "select2": "^4.1.0-rc.0",

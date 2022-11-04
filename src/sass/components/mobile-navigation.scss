@@ -1,0 +1,116 @@
+html.mobile-navigation-open {
+    overflow: hidden;
+}
+
+.mobile-navigation__trigger {
+    border: 0;
+    background: none;
+    font-size: $h5-font-size;
+    padding: 12px;
+    color: $white;
+}
+
+.mobile-navigation__trigger-text {
+    @include visually-hidden;
+}  
+
+.mobile-navigation {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background: $darkblue-5;
+    z-index: 10;
+    &.is-open {
+        pointer-events: initial;
+        opacity: 1;
+    }  
+}
+
+.mobile-navigation__header {
+    padding: 24px 18px;
+    background: $darkblue-10;
+}
+
+.mobile-navigation__header-action {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-size: $h6-font-size;
+    line-height: 1;
+    .icon {
+        vertical-align: sub;
+    }
+}
+
+.mobile-navigation__menu {
+    position: fixed;
+    top: 97px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+.mobile-navigation__menu-item {
+    position: relative;
+    padding: 18px 30px;
+    border-bottom: 1px solid $darkblue-20;
+    font-size: $h6-font-size;
+    font-weight: 700;
+    color: $blue;
+    text-decoration: none;
+    &.is-open {
+        background: $darkblue;
+        color: $white;
+    }
+}
+
+.mobile-navigation__menu-item-icon--nav-down {
+    font-size: pxtorem(6);
+}  
+
+.mobile-navigation__collapsible-trigger {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    font-weight: 700;
+}
+
+.mobile-navigation__collapsible-content {
+    padding: pxtorem(18) pxtorem(30);
+}   
+
+.mobile-navigation__sub-menu {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background: $darkblue-5;
+    z-index: 12;
+    &.is-open {
+        pointer-events: initial;
+        opacity: 1;
+    }  
+}
+
+.mobile-navigation__header-title {
+    font-size: $h6-font-size;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.mobile-navigation__cta {
+    padding: 30px;
+}

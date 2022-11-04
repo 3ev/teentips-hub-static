@@ -1,0 +1,99 @@
+.nav-over-open {
+    overflow: hidden;;
+}
+
+.nav-over {
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    bottom: 10vh;
+    top: 0; 
+    padding-top: 114px; 
+    left: 0;
+    right: 0;
+    z-index: 9;
+    overflow-y: auto;
+    background: $darkblue-5;
+    box-shadow: 0px 24px 48px rgba(28, 37, 98, 0.25);
+    transition: opacity 0.5s;
+    
+    &.is-open {
+        pointer-events: initial;
+        opacity: 1;
+    }
+}
+
+.nav-over__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 114px;
+    bottom: 10vh;
+    overflow-y: auto;
+    background: $darkblue-10;
+    @include media-breakpoint-down(xl) {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.nav-over__nav-item {
+    padding: pxtorem(18) pxtorem(24);
+    border-bottom: 1px solid $darkblue-20;
+    font-family: $font-family-sans-serif;
+    font-size: $h6-font-size;
+    color: $blue;
+
+    &.is-active {
+        background: $darkblue-5;
+        font-weight: 700;
+        border-bottom-color: $darkblue-5;
+    }
+    
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.nav-over__nav-cta {
+    padding: pxtorem(18) pxtorem(24); 
+}
+
+.nav-over__content-item {
+    padding-top: 37px;
+    .js & {
+        display: none;
+        &.is-active {
+            display: block;
+        }
+    }
+}
+
+.nav-over__content-heading {
+    font-size: $h4-font-size;
+    font-weight: 400;
+}
+
+.nav-over__overlay {
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transition: opacity 0.5s;
+    background: rgba(0,0,0,0.3);
+    
+    &.is-visible {
+        pointer-events: initial;
+        opacity: 1;
+    }
+}

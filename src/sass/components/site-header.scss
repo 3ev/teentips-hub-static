@@ -1,0 +1,51 @@
+body {
+    scroll-padding-top: 50px;
+}
+.site-header {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: $darkblue;
+    color: $white;
+    @include media-breakpoint-up(md) {
+        padding-top: 29px;
+        padding-bottom: 29px;
+    }
+}
+
+.site-header__search-button {
+    padding: pxtorem(14);
+    margin-right: 18px;
+    font-size: $h6-font-size;
+    background: none;
+    border: 0;
+    color: $white;
+}
+
+.site-header__nav-item-icon {
+    font-size: $h8-font-size;
+}
+
+// Mobile navigation
+@include media-breakpoint-down(xl) {
+    .js {
+        .site-header__search-button {
+            display: none;
+        }
+        .site-header__nav {
+            display: none !important;
+        }
+        .site-header__account-button {
+            border: 0;
+            font-size: $h5-font-size;
+            padding: 12px;
+        }
+        .site-header__account-button-text {
+            @include visually-hidden;
+        }
+    }
+}

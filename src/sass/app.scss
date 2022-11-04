@@ -26,12 +26,14 @@
 @import "../../node_modules/bootstrap/scss/containers";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/transitions";
 
 // 6. Additional libraries
 @import "../../node_modules/slick-carousel/slick/slick";
 
 // 7. Custom styling
-@import "./helpers/list-reset";
+@import "./utilities/list-reset";
+@import "./utilities/rotate";
 @import "./common/typography";
 @import "./common/images";
 @import "./components/icons";
@@ -45,4 +47,8 @@
 @import "./components/badge";
 @import "./components/featured-content-listing";
 @import "./components/carousel";
+@import "./components/site-header";
+@import "./components/headroom";
+@import "./components/nav-over";
+@import "./components/mobile-navigation";
 @import "./components/site-footer";
