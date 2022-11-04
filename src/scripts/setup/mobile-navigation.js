@@ -63,7 +63,7 @@ class MobileNav {
         this.$trigger.removeClass('is-active');
         this.$target.removeClass('is-open');
         this.$html.removeClass('mobile-navigation-open');
-        this.$menuItems.each(function() {
+        this.$menus.each(function() {
             $(this).removeClass('is-open');
         });
     }
