@@ -5,7 +5,7 @@
     position: fixed;
     height: 100vh;
     top: 0; 
-    padding-top: 114px; // Temporary, height of site header
+    padding-top: 114px; 
     left: 0;
     right: 0;
     z-index: 9;
@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    top: 114px; // Temporary, height of site header
+    top: 114px;
     bottom: 0;
     overflow-y: auto;
     background: $darkblue-10;
