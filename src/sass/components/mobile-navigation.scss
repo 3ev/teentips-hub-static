@@ -9,9 +9,11 @@ body.mobile-navigation-open {
     padding: 12px;
     color: $white;
 }
+
 .mobile-navigation__trigger-text {
     @include visually-hidden;
 }  
+
 .mobile-navigation {
     pointer-events: none;
     position: absolute;
@@ -28,10 +30,12 @@ body.mobile-navigation-open {
         opacity: 1;
     }  
 }
+
 .mobile-navigation__header {
     padding: 24px 18px;
     background: $darkblue-10;
 }
+
 .mobile-navigation__header-action {
     display: block;
     padding: 12px;
@@ -42,6 +46,7 @@ body.mobile-navigation-open {
         vertical-align: sub;
     }
 }
+
 .mobile-navigation__menu {
     position: absolute;
     top: 97px; // Temporary. Height of .mobile-navigation__header
@@ -50,20 +55,38 @@ body.mobile-navigation-open {
     right: 0;
     overflow-y: auto;
 }
+
 .mobile-navigation__menu-item {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     padding: 18px 30px;
     border-bottom: 1px solid $darkblue-20;
     font-size: $h6-font-size;
     font-weight: 700;
     color: $blue;
-    background: url(/images/ui/caret.svg) no-repeat center right 35px;
-    background-size: 6px auto;
-    a {
-        text-decoration: none;
+    text-decoration: none;
+    &.is-open {
+        background: $darkblue;
+        color: $white;
     }
 }
+
+.mobile-navigation__menu-item-icon--nav-down {
+    font-size: pxtorem(6);
+}  
+
+.mobile-navigation__collapsible-trigger {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    font-weight: 700;
+}
+
+.mobile-navigation__collapsible-content {
+    padding: pxtorem(18) pxtorem(30);
+}   
+
 .mobile-navigation__sub-menu {
     pointer-events: none;
     position: absolute;
