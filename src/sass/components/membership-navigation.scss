@@ -8,7 +8,10 @@
 .membership-navigation__text {
     margin: 0;
     gap: pxtorem(8);
-    font-size: $h6-font-size;
+    font-size: $h7-font-size;
+    @include media-breakpoint-up(sm) {
+        font-size: $h6-font-size;
+    }
 }
 
 .membership-navigation__icon {

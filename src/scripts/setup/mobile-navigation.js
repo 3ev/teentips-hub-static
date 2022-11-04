@@ -4,7 +4,7 @@ class MobileNav {
         this.$html = $html;
         this.targetId = $trigger.attr('href');
         this.$target = $(this.targetId);
-        this.$closeTrigger = $(this.$target.find('.js-mobile-navigation__close-trigger'));
+        this.$closeTrigger = $('.js-mobile-navigation__close-trigger');
         this.$menus = $('.js-mobile-navigation');
         this.$menuItems = $('.js-mobile-navigation__menu-item');
         this.$backTriggers = $('.js-mobile-navigation__back-trigger');
