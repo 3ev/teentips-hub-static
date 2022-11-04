@@ -54,7 +54,7 @@ class NavOverItem {
         this.$homeLink.on('click', function(e) {
             obj.closeCurrentNav(e);
         });
-        
+
         this.$overlay.on('click', function(e) {
             obj.closeCurrentNav(e);
         });
@@ -78,8 +78,11 @@ class NavOverItem {
             this.close();
         }
         else if(this.isAnotherNavOpen()) {
+            const obj = this;
+            this.$html.addClass('no-animation');
             this.closeAllNavs();
             this.open();
+            this.$html.removeClass('no-animation');
         } 
         else {
             this.open();
