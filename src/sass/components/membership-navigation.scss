@@ -1,0 +1,33 @@
+.membership-navigation {
+    margin-top: 58px;
+    padding: 12px 20px;
+    border-radius: $border-radius;
+    background: $darkblue-5;
+}
+
+.membership-navigation__text {
+    margin: 0;
+    gap: pxtorem(8);
+    font-size: $h7-font-size;
+
+    @include media-breakpoint-up(sm) {
+        font-size: $h6-font-size;
+    }
+}
+
+.membership-navigation__icon {
+    font-size: $h8-font-size;
+}
+
+.membership-navigation__menu {
+    font-size: $h7-font-size;
+    gap: pxtorem(24);
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

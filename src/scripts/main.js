@@ -1,7 +1,7 @@
 // import external dependencies
 import 'jquery';
 import {domReady} from '@roots/sage/client';
-import Collapse from 'bootstrap/js/dist/collapse'
+import Collapse from 'bootstrap/js/dist/collapse' // eslint-disable-line no-unused-vars
 
 // Import components
 import Carousel from './setup/carousel';

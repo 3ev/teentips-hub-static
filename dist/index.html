@@ -40,6 +40,24 @@
     </div>
 </header>
 
+<div id="mobile-account-navigation" class="js-mobile-navigation mobile-navigation">
+    <div class="js-mobile-navigation__header mobile-navigation__header d-flex align-items-center justify-content-between">
+        <h2 class="mobile-navigation__header-title flex-grow-1">Account</h2>
+        <a class="mobile-navigation__header-action js-mobile-navigation__close-trigger" href="#mobile-account-navigation-trigger"><span class="icon icon-close"></span><span class="visually-hidden">Close</span></a>
+    </div>
+    <div class="js-mobile-navigation__menu mobile-navigation__menu">
+        <ul class="list-reset">
+            <li><a class="js-mobile-navigation__menu-item mobile-navigation__menu-item d-flex align-items-center justify-content-between" href="/1"><span class="mobile-navigation__menu-item-text">Account Details</span> <span class="icon icon-link-arrow d-flex mobile-navigation__menu-item-icon"></span></a></li>
+            <li><a class="js-mobile-navigation__menu-item mobile-navigation__menu-item d-flex align-items-center justify-content-between" href="/2"><span class="mobile-navigation__menu-item-text">Membership</span> <span class="icon icon-link-arrow d-flex mobile-navigation__menu-item-icon"></span></a></li>
+            <li><a class="js-mobile-navigation__menu-item mobile-navigation__menu-item d-flex align-items-center justify-content-between" href="/3"><span class="mobile-navigation__menu-item-text">Payment Details</span> <span class="icon icon-link-arrow d-flex mobile-navigation__menu-item-icon"></span></a></li>
+            <li><a class="js-mobile-navigation__menu-item mobile-navigation__menu-item d-flex align-items-center justify-content-between" href="/4"><span class="mobile-navigation__menu-item-text">My courses</span> <span class="icon icon-link-arrow d-flex mobile-navigation__menu-item-icon"></span></a></li>
+        </ul>
+        <div class="mobile-navigation__cta">
+            <a href="#" class="btn btn-mid-light">Full Overview</a>
+        </div>
+    </div>
+</div>
+
 <div id="mobile-navigation" class="js-mobile-navigation mobile-navigation">
     <div class="js-mobile-navigation__header mobile-navigation__header d-flex align-items-center justify-content-between">
         <a class="mobile-navigation__header-action" href="#"><span class="icon icon-search"></span><span class="visually-hidden">Search</span></a>
@@ -61,7 +79,7 @@
 <div id="mobile-nav-courses" class="js-mobile-navigation mobile-navigation mobile-navigation__sub-menu">
     <div class="js-mobile-navigation__header mobile-navigation__header d-flex align-items-center justify-content-between">
         <a class="js-mobile-navigation__back-trigger mobile-navigation__header-action rotate-180" aria-controls="mobile-nav-courses" href="#mobile-navigation"><span class="icon icon-link-arrow"></span><span class="visually-hidden">Back to main menu</span></a>
-        <h2 class="mobile-navigation__header-title">Courses</h2>
+        <h2 class="mobile-navigation__header-title flex-grow-1">Courses</h2>
         <a class="mobile-navigation__header-action js-mobile-navigation__close-trigger" href="#mobile-navigation-trigger"><span class="icon icon-close"></span><span class="visually-hidden">Close</span></a>
     </div>
     <div class="js-mobile-navigation__menu mobile-navigation__menu">
@@ -87,7 +105,7 @@
 <div id="mobile-nav-resources" class="js-mobile-navigation mobile-navigation mobile-navigation__sub-menu">
     <div class="js-mobile-navigation__header mobile-navigation__header d-flex align-items-center justify-content-between">
         <a class="js-mobile-navigation__back-trigger mobile-navigation__header-action rotate-180" aria-controls="mobile-nav-courses" href="#mobile-navigation"><span class="icon icon-link-arrow"></span><span class="visually-hidden">Back to main menu</span></a>
-        <h2 class="mobile-navigation__header-title">Resources</h2>
+        <h2 class="mobile-navigation__header-title flex-grow-1">Resources</h2>
         <a class="mobile-navigation__header-action js-mobile-navigation__close-trigger" href="#mobile-navigation-trigger"><span class="icon icon-close"></span><span class="visually-hidden">Close</span></a>
     </div>
     <div class="js-mobile-navigation__menu mobile-navigation__menu">
@@ -265,7 +283,20 @@
 
         <main>
             <section class="container">
-                <div class="hero">
+                <div class="membership-navigation d-flex justify-content-between align-items-center">
+                    <p class="membership-navigation__text d-flex align-items-center flex-wrap"><span class="membership-navigation__icon icon icon-user"></span>Welcome back <strong>Ollie Pelling</strong> <span class="badge badge--alternate">School Staff</p>
+                    <nav>
+                        <ul class="membership-navigation__menu list-reset d-none d-lg-flex">
+                            <li><a href="#">Account Details</a></li>
+                            <li><a href="#">Membership</a></li>
+                            <li><a href="#">My Courses</a></li>
+                            <li><a href="#">My Favourites</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <section class="container">
+                <div class="hero mt-4">
                     <div class="row">
                         <div class="hero__column-one col-lg-7 col-xxl-6 offset-xxl-1 row">
                             <p class="kicker col-xl-10">September's theme</p>
