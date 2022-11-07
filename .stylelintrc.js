@@ -1,3 +1,5 @@
+const { builtinRules } = require("eslint/use-at-your-own-risk");
+
 module.exports = {
     extends: [
         "stylelint-config-standard",
@@ -15,6 +17,7 @@ module.exports = {
         "no-empty-source": null,
         "string-quotes": "double",
         "no-descending-specificity": null,
+        "number-max-precision": null,
         "at-rule-no-unknown": [
             true,
             {
