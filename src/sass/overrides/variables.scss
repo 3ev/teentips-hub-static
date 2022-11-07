@@ -102,7 +102,7 @@ $headings-margin-bottom: 1rem * 0.5;
 $headings-font-family: null;
 $headings-font-style: null;
 $headings-font-weight: 700;
-$headings-line-height: 1.4;
+$headings-line-height: 1.1;
 $headings-color: $blue;
 
 // Border radius
@@ -130,6 +130,8 @@ $grid-gutter-width: 2.5rem;
 
 // Spacer
 // Modify the spacer elements
+$enable-negative-margins: true;
+
 $spacer: 1.25rem; // 20px
 $spacers: (
     0: 0,

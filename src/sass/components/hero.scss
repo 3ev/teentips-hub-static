@@ -1,9 +1,3 @@
-.hero {
-    @include media-breakpoint-up(lg) {
-        margin-bottom: 80px;
-    }
-}
-
 .hero--image-left-aligned,
 .hero--image-right-aligned {
     margin-top: $spacer * 4;
@@ -19,7 +13,6 @@
     position: relative;
 
     @include media-breakpoint-down(lg) {
-        padding-bottom: 40px;
         margin-bottom: 50px;
     }
 

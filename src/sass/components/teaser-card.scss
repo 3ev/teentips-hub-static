@@ -1,0 +1,9 @@
+.teaser-card {
+    padding: 30px;
+    background: $white;
+    border-radius: $border-radius;
+}
+
+.teaser-card__heading {
+    margin-bottom: pxtorem(24);
+}
