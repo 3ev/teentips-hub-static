@@ -89,7 +89,6 @@ $font-size-base: 1.125rem;
 $line-height-base: 1.4;
 $line-height-sm: 1.25;
 $line-height-lg: 1.5;
-/* stylelint-disable number-max-precision */
 $h1-font-size: $font-size-base * 3.11111111; // 56
 $h2-font-size: $font-size-base * 2.666666666666667; // 48
 $h3-font-size: $font-size-base * 1.777777777777778; // 32
@@ -98,7 +97,6 @@ $h5-font-size: $font-size-base * 1.111111111111111; // 20
 $h6-font-size: $font-size-base * 0.8888888888888889; // 16
 $h7-font-size: $font-size-base * 0.7777777777777778; // 14
 $h8-font-size: $font-size-base * 0.6666666666666667; // 12
-/* stylelint-enable number-max-precision */
 
 $headings-margin-bottom: 1rem * 0.5;
 $headings-font-family: null;
