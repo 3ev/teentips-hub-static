@@ -1,0 +1,75 @@
+.accreditations {
+    position: relative;
+    padding: 30px 0 40px;
+    overflow: hidden;
+    background: $blue;
+    color: $white;
+
+    @include media-breakpoint-up(lg) {
+        padding: 140px 0;
+    }
+}
+
+.accreditations__heading {
+    margin-bottom: 24px;
+    color: $white;
+    font-size: $h4-font-size;
+
+    @include media-breakpoint-down(sm) {
+        padding-right: 37.6vw; // Width of .accreditations__award-image
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $h2-font-size;
+    }
+}
+
+.accreditations__copy {
+    @include media-breakpoint-between(400, sm) {
+        padding-right: 37.6vw; // Width of .accreditations__award-image
+    }
+}
+
+.accreditations__awards {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    padding: 20px 0;
+    gap: 12px;
+    z-index: 2;
+    background: $blue-5;
+    border-radius: 0 0 0 $border-radius;
+    width: 37.6vw;
+    max-width: 460px;
+
+    @include media-breakpoint-up(lg) {
+        padding: 60px 0 80px;
+    }
+}
+
+.accreditations__shadow {
+    &::after {
+        content: "";
+        display: block;
+        width: 87px;
+        height: 87px;
+        position: absolute;
+        top: 97px;
+        right: 0;
+        background: rgba($darkblue, 0.2);
+        border-radius: 0 0 0 $border-radius;
+
+        @include media-breakpoint-up(sm) {
+            width: 241px;
+            height: 241px;
+            right: 24.2142857%;
+            top: auto;
+            bottom: 0;
+            border-radius: $border-radius $border-radius 0 0;
+        }
+    }
+}
+
+.accreditations__award-image {
+    width: 30.4964539%;
+}

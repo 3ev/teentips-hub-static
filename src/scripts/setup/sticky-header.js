@@ -5,6 +5,10 @@ const StickyHeader = {
         const headroom = new Headroom(document.querySelector('.js-site-header'),
         {
             offset : 100,
+            tolerance : {
+                up : 5,
+                down : 0,
+            },
         });        
         headroom.init();
 
