@@ -1,0 +1,5 @@
+.visually-hidden-sm-only {
+    @include media-breakpoint-down(sm) {
+        @include visually-hidden;
+    }
+}
