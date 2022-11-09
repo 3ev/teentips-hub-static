@@ -6,7 +6,7 @@
     gap: 12px;
 
     @include media-breakpoint-down(sm) {
-        display: block;
+        display: flex;
         text-align: center;
         width: 100%;
     }
