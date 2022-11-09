@@ -1,0 +1,61 @@
+.topic-listing .slick-list {
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -3px;
+        bottom: -1px;
+        width: 63px;
+        background: linear-gradient(270deg, #FFFFFF 0%, rgba(253, 253, 253, 0.958333) 0.01%, rgba(255, 255, 255, 0) 100%);
+    }
+}
+.topic-listing__item {
+    width: 290px;
+    height: 145px;
+    gap: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/images/content/schoolsout.jpg) no-repeat center center;
+    background-size: 100% 100%, 100% auto;
+    box-shadow: 0px 4px 18px rgba(28, 37, 98, 0.1);
+    border-radius: $border-radius;
+    color: $white;
+    text-decoration: none;
+    transition: 0.15s ease-out;
+    &:hover {
+        color: $white;
+        transform: translateY(-4px);
+    }
+    &:active {
+        transform: translateY(0);
+        transition: none;
+    }
+}
+
+.topic-listing__button-prev {
+    visibility: hidden;
+    touch-action: none;
+    @include media-breakpoint-up(sm) {
+        touch-action: auto;
+        visibility: visible;
+        width: auto;
+        position: absolute;
+        top: 55px;
+        left: -40px;
+        z-index: 5;
+    }
+}
+
+.topic-listing__button-next {
+    visibility: hidden;
+    touch-action: none;
+    @include media-breakpoint-up(sm) {
+        touch-action: auto;
+        visibility: visible;
+        width: auto;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        z-index: 5;
+    }
+}
