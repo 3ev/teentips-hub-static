@@ -4,6 +4,10 @@
     background: $darkblue-5;
     border-radius: $border-radius;
     text-decoration: none;
+    &:hover {
+        background: $darkblue-10;
+        color: $darkblue;
+    }
 }
 
 .pagination__link-next {
