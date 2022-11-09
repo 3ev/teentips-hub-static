@@ -1,0 +1,24 @@
+.pagination__link {
+    padding: 32px 20px;
+    gap: 24px;
+    background: $darkblue-5;
+    border-radius: $border-radius;
+    text-decoration: none;
+    &:hover {
+        background: $darkblue-10;
+        color: $darkblue;
+    }
+}
+
+.pagination__link-next {
+    text-align: right;
+}
+
+.pagination__item-title {
+    margin-top: pxtorem(2);
+    font-size: $h7-font-size;
+    font-weight: 700;
+    @include media-breakpoint-up(sm) {
+        font-size: $h6-font-size;
+    }
+}
