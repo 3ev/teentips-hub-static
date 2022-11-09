@@ -15,6 +15,7 @@
 // 4. Component variable overrides
 @import "./overrides/buttons";
 @import "./overrides/badge";
+@import "./overrides/forms";
 
 // 5. Include any optional Bootstrap components as you like
 @import "../../node_modules/bootstrap/scss/root";
@@ -27,6 +28,7 @@
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/badge";
 @import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/forms";
 
 // 6. Additional libraries
 @import "../../node_modules/slick-carousel/slick/slick";
@@ -34,6 +36,7 @@
 // 7. Custom styling
 @import "./utilities/list-reset";
 @import "./utilities/rotate";
+@import "./utilities/visually-hidden";
 @import "./common/typography";
 @import "./common/images";
 @import "./components/icons";
@@ -57,3 +60,4 @@
 @import "./components/membership-navigation";
 @import "./components/accreditations";
 @import "./components/pagination";
+@import "./components/search-panel";

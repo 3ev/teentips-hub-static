@@ -1,0 +1,7 @@
+.search-panel {
+    padding: 30px;
+    background: $darkblue-5;
+    @include media-breakpoint-up(sm) {
+        border-radius: $border-radius;
+    }
+}
