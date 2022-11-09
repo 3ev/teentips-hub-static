@@ -73,3 +73,8 @@
         background: $blue;
     }
 }
+
+.btn.btn-round {
+    padding: pxtoem(6, 16) pxtoem(10, 16) pxtoem(7, 16);
+    border-radius: 99em;
+}

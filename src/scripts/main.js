@@ -5,6 +5,7 @@ import Collapse from 'bootstrap/js/dist/collapse' // eslint-disable-line no-unus
 
 // Import components
 import Carousel from './setup/carousel';
+import MultiCarousel from './setup/multi-carousel';
 import StickyHeader from './setup/sticky-header';
 import NavOver from './setup/nav-over';
 import NoJS from './setup/no';
@@ -21,6 +22,7 @@ const main = async (err) => {
 
     NoJS.init();
     Carousel.init();
+    MultiCarousel.init();
     StickyHeader.init();
     NavOver.init();
 
