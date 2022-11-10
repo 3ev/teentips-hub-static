@@ -136,27 +136,27 @@ $input-group-addon-border-color: $input-border-color !default;
 // scss-docs-end input-group-variables
 
 // scss-docs-start form-select-variables
-$form-select-padding-y: $input-padding-y !default;
-$form-select-padding-x: $input-padding-x !default;
+$form-select-padding-y: 14px;
+$form-select-padding-x: 18px;
 $form-select-font-family: $input-font-family !default;
-$form-select-font-size: $input-font-size !default;
-$form-select-indicator-padding: $form-select-padding-x * 3 !default; // Extra padding for background-image
+$form-select-font-size: $h6-font-size;
+$form-select-indicator-padding: $form-select-padding-x * 4; // Extra padding for background-image
 $form-select-font-weight: $input-font-weight !default;
 $form-select-line-height: $input-line-height !default;
-$form-select-color: $input-color !default;
-$form-select-bg: $input-bg !default;
+$form-select-color: $darkblue;
+$form-select-bg: $darkblue-10;
 $form-select-disabled-color: null !default;
 $form-select-disabled-bg: $gray-200 !default;
 $form-select-disabled-border-color: $input-disabled-border-color !default;
 $form-select-bg-position: right $form-select-padding-x center !default;
-$form-select-bg-size: 16px 12px !default; // In pixels because image dimensions
-$form-select-indicator-color: $gray-800 !default;
-$form-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>") !default;
+$form-select-bg-size: 18px 18px; // In pixels because image dimensions
+$form-select-indicator-color: $form-select-color;
+$form-select-indicator: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3.5 6.5L8 11L12.5 6.5' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round'/></svg>");
 $form-select-feedback-icon-padding-end: $form-select-padding-x * 2.5 + $form-select-indicator-padding !default;
 $form-select-feedback-icon-position: center right $form-select-indicator-padding !default;
 $form-select-feedback-icon-size: $input-height-inner-half
     $input-height-inner-half !default;
-$form-select-border-width: $input-border-width !default;
+$form-select-border-width: 0;
 $form-select-border-color: $input-border-color !default;
 $form-select-border-radius: $input-border-radius !default;
 $form-select-box-shadow: $box-shadow-inset !default;
