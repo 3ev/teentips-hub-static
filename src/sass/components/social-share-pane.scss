@@ -1,0 +1,17 @@
+.social-share-pane {
+    top: 20px;
+    color: $blue;
+    font-size: $h3-font-size;
+    @include media-breakpoint-up(lg) {
+        position: sticky;
+        text-align: center;
+    }
+}
+
+.social-share-pane__list {
+    gap: 30px;
+}
+
+.social-share-pane__item {
+    text-decoration: none;
+}
