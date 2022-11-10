@@ -59,6 +59,8 @@
 .site-footer__social {
     display: flex;
     gap: 30px;
+    color: $blue;
+    font-size: pxtorem(24);
 
     @include media-breakpoint-up(lg) {
         justify-content: flex-end;
