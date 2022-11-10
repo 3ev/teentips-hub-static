@@ -74,6 +74,12 @@
     }
 }
 
+.btn.btn-invisible-primary {
+    background: none;
+    border: 0;
+    color: $blue;
+}
+
 .btn.btn-round {
     padding: pxtoem(3, 16) pxtoem(10, 16) pxtoem(7, 16);
     border-radius: 99em;
