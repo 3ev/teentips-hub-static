@@ -22,7 +22,9 @@ const StickyHeader = {
         headroom.init();
 
         this.setPlacement();
-        window.addEventListener('resize', this.setPlacement);
+        $(window).on('resize', () => {
+            this.setPlacement();
+        });
     },
     setPlacement() {
         const siteHeaderHeight = $('.js-site-header').outerHeight();
