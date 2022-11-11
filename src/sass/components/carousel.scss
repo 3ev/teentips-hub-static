@@ -77,7 +77,7 @@
         url("/images/ui/quote.svg") bottom right no-repeat;
     background-size: 66px auto;
     font-size: $h6-font-size;
-    font-family: $font-family-heading;
+    font-family: $font-family-display;
     font-weight: 500;
 
     @include media-breakpoint-up(md) {
@@ -96,7 +96,7 @@
 
 .carousel__byline {
     font-size: $h7-font-size;
-    font-family: $font-family-heading;
+    font-family: $font-family-display;
     font-weight: bold;
 }
 

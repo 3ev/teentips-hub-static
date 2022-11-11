@@ -1,0 +1,74 @@
+.account-prompt {
+    overflow: hidden;
+    background-color: $darkblue-5;
+    border-radius: $border-radius;
+    .form-text,
+    .form-label {
+        color: $white;
+    }
+}
+
+.account-prompt__primary {
+    padding: 30px;
+    @include media-breakpoint-up(lg) {
+        padding: 60px 70px 66px;
+    }
+}
+
+.account-prompt__primary-title {
+    color: $darkblue;
+    margin-bottom: 24px;
+}
+
+.account-prompt__primary-copy {
+    font-size: $h6-font-size;
+    margin-bottom: 24px;
+}
+
+.account-prompt__list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px 20px 20px 0;
+    border-top: 1px solid $darkblue-20;
+    font-family: $font-family-display;
+    font-size: $h6-font-size;
+    color: $darkblue;
+}
+
+.account-prompt__list-icon {
+    font-size: $h3-font-size;
+    color: $green-vibrant;
+    &::before {
+        vertical-align: text-top;
+    }
+}
+
+.account-prompt__actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    @include media-breakpoint-up(lg) {
+        margin-top: 56px;
+    }
+}
+
+.account-prompt__secondary {
+    padding: 30px;
+    background: $blue;
+    color: $white;
+    @include media-breakpoint-up(lg) {
+        padding: 58px 58px 66px 70px;
+    }
+}
+
+.account-prompt__secondary-form {
+    @include media-breakpoint-up(lg) {
+        padding-right: 12px;
+    }
+}
+
+.account-prompt__secondary-title {
+    color: $white;
+    margin-bottom: 24px;
+}
