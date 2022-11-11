@@ -11,7 +11,9 @@ class MobileNav {
 
         this.attach();
         this.setPlacement();
-        window.addEventListener('resize', this.setPlacement);
+        $(window).on('resize', () => {
+            this.setPlacement();
+        });
     }
     attach() {
         let obj = this;

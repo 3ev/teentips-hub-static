@@ -18,7 +18,7 @@ const TopicNav = {
         }
     },
     activateCollapse() {
-        this.collapsible = new Collapse('.js-topic-navigation__list', {
+        this.collapsible = Collapse.getOrCreateInstance('.js-topic-navigation__list', {
             toggle: false,
         });
         this.$items.addClass('collapse');
@@ -33,7 +33,11 @@ const TopicNav = {
         });
     },
     deactivateCollapse() {
-        this.$items.collapse.dispose();
+        const collapsible = Collapse.getInstance('.js-topic-navigation__list');
+        if(collapsible === null) {
+            return
+        }
+        collapsible.dispose();
         this.$items.removeClass('collapse');
     },
 };
