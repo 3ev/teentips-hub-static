@@ -79,10 +79,10 @@ $theme-colors: map.merge(
 );
 
 // Typography
-$font-family-heading: "DM Sans", "Helvetica Neue", "Noto Sans",
+$font-family-display: "DM Sans", "Helvetica Neue", "Noto Sans",
     "Liberation Sans", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-copy: "AtkinsonHyperlegible", "Helvetica Neue", "Noto Sans",
+$font-family-base: "AtkinsonHyperlegible", "Helvetica Neue", "Noto Sans",
     "Liberation Sans", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 $font-size-base: 1.125rem;
@@ -99,7 +99,7 @@ $h7-font-size: $font-size-base * 0.7777777777777778; // 14
 $h8-font-size: $font-size-base * 0.6666666666666667; // 12
 
 $headings-margin-bottom: 1rem * 0.5;
-$headings-font-family: null;
+$headings-font-family: $font-family-display;
 $headings-font-style: null;
 $headings-font-weight: 700;
 $headings-line-height: 1.1;

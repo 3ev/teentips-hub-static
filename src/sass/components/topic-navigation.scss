@@ -1,6 +1,6 @@
 .topic-navigation {
     background: $darkblue-5;
-    font-family: $font-family-heading;
+    font-family: $font-family-display;
     margin: 0 calc(-0.5 * var(--bs-gutter-x));
 
     @include media-breakpoint-up(md) {
