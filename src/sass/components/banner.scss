@@ -16,7 +16,7 @@
 
     border-radius: $border-radius;
     background: $blue-10;
-    box-shadow: 0px 24px 48px rgba(28, 37, 98, 0.25);
+    box-shadow: 0 24px 48px rgb(28 37 98 / 25%);
 
     .banner--dark & {
         background: $blue;
@@ -110,6 +110,7 @@
 .banner__image {
     overflow: hidden;
     border-radius: 0 0 $border-radius $border-radius;
+
     @include media-breakpoint-down(lg) {
         border-radius: 0 0 $border-radius 0;
     }

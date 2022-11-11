@@ -4,6 +4,7 @@
     background: $darkblue-5;
     border-radius: $border-radius;
     text-decoration: none;
+
     &:hover {
         background: $darkblue-10;
         color: $darkblue;
@@ -18,6 +19,7 @@
     margin-top: pxtorem(2);
     font-size: $h7-font-size;
     font-weight: 700;
+
     @include media-breakpoint-up(sm) {
         font-size: $h6-font-size;
     }

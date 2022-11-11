@@ -5,13 +5,11 @@ const TopicNav = {
         this.$title = $('.js-topic-navigation__title');
         this.$items = $('.js-topic-navigation__list');
         this.checkBreakpoint();
-        const obj= this;
         $(window).on('resize', () => {
             this.checkBreakpoint();
         });
     },
     checkBreakpoint() {
-        const obj = this;
         if (window.matchMedia('(max-width: 768px)').matches) {
             this.activateCollapse();
         }
@@ -21,16 +19,16 @@ const TopicNav = {
     },
     activateCollapse() {
         this.collapsible = new Collapse('.js-topic-navigation__list', {
-            toggle: false
+            toggle: false,
         });
         this.$items.addClass('collapse');
         this.$title.on('click', () => {
             this.collapsible.toggle();
         });
-        this.$items.on('show.bs.collapse', event => {
+        this.$items.on('show.bs.collapse', () => {
             this.$title.addClass('is-open');
         });
-        this.$items.on('hide.bs.collapse', event => {
+        this.$items.on('hide.bs.collapse', () => {
             this.$title.removeClass('is-open');
         });
     },

@@ -236,6 +236,7 @@ $form-feedback-icon-invalid: url("data:image/svg+xml,<svg xmlns='http://www.w3.o
 
 .input-group .btn {
     border-radius: 8px;
+
     @include media-breakpoint-down(sm) {
         width: auto !important;
     }
