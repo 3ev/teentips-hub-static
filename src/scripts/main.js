@@ -10,6 +10,7 @@ import StickyHeader from './setup/sticky-header';
 import NavOver from './setup/nav-over';
 import NoJS from './setup/no';
 import MobileNav from './setup/mobile-navigation';
+import TopicNav from './setup/topic-navigation';
 
 /**
  * app.main
@@ -25,13 +26,14 @@ const main = async (err) => {
     MultiCarousel.init();
     StickyHeader.init();
     NavOver.init();
+    TopicNav.init();
 
     $('.js-mobile-navigation__trigger').each(function() {
         const $html = $('html, body');
         const $trigger = $(this);
         new MobileNav($trigger, $html);
     });
-
+    
 };
 
 /**
