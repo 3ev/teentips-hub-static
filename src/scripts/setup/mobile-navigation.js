@@ -2,7 +2,22 @@ class MobileNav {
     constructor($trigger, $html) {
         this.$trigger = $trigger;
         this.$html = $html;
-        this.targetId = $trigger.attr('href');
+        this.checkBreakpoint();
+        window.addEventListener('resize', () => {
+            this.checkBreakpoint();
+        });
+    }
+    checkBreakpoint() {
+        if (window.matchMedia('(max-width: 1199px)').matches) {
+            this.activate();
+        }
+        else {
+            this.deactivate();
+        }
+    }
+    activate() {
+        this.active = true;
+        this.targetId = this.$trigger.attr('href');
         this.$target = $(this.targetId);
         this.$closeTrigger = $('.js-mobile-navigation__close-trigger');
         this.$menus = $('.js-mobile-navigation');
@@ -15,6 +30,14 @@ class MobileNav {
         $(window).on('resize', () => {
             this.setPlacement();
         });
+    }
+    deactivate() {
+        if(this.active == true) {
+            this.close();
+            return;
+        }
+        this.active = false;
+
     }
     attach() {
         let obj = this;
