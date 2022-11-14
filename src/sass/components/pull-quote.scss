@@ -1,0 +1,16 @@
+.pull-quote {
+    padding: pxtorem(30);
+    margin: pxtorem(48) 0;
+    font-size: $h5-font-size;
+    font-family: $font-family-display;
+    background: $darkblue-5;
+    @include media-breakpoint-up(md) {
+        width: 372px;
+        float: right;
+        position: relative;
+        left: 152px;
+        margin: 30px 0 30px -112px;
+        padding: 60px;
+        font-size: $h4-font-size;
+    }
+}
