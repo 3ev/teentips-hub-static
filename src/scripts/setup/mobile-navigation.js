@@ -24,6 +24,7 @@ class MobileNav {
         this.$menuItems = $('.js-mobile-navigation__menu-item');
         this.$backTriggers = $('.js-mobile-navigation__back-trigger');
         this.$overlay = $('.js-mobile-navigation__overlay');
+        this.$searchTrigger = $('.js-mobile-navigation__search-trigger');
 
         this.attach();
         this.setPlacement();
@@ -66,6 +67,12 @@ class MobileNav {
             e.preventDefault();
             const $this = $(this);
             obj.closeSelf($this);
+        });
+        this.$searchTrigger.on('click', function(e) {
+            e.preventDefault();
+            const targetId = $(this).attr('href');
+            const $target = $(targetId);
+            obj.openNavItem($target);
         });
         this.$menuItems.each(function() {
             const $menuItem = $(this);
