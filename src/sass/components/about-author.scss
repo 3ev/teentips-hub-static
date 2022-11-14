@@ -1,0 +1,23 @@
+.about-author {
+    padding: 30px;
+    background: $darkblue-5;
+    border-radius: $border-radius;
+}
+
+.about-author__image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-author__title {
+    font-size: $h6-font-size;
+    color: $blue;
+    margin-bottom: pxtorem(12);
+    @include media-breakpoint-up(lg) {
+        $font-size: $h5-font-size;
+    }
+}
+
+.about-author__copy {
+    margin-bottom: 0;;
+}
