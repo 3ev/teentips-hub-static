@@ -2,6 +2,7 @@
     font-size: $h6-font-size;
     margin-bottom: 4px;
     padding-right: 70px;
+    color: $blue;
 
     @include media-breakpoint-up(sm) {
         padding-right: 40px;

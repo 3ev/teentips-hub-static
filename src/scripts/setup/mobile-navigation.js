@@ -8,6 +8,7 @@ class MobileNav {
         this.$menus = $('.js-mobile-navigation');
         this.$menuItems = $('.js-mobile-navigation__menu-item');
         this.$backTriggers = $('.js-mobile-navigation__back-trigger');
+        this.$overlay = $('.js-mobile-navigation__overlay');
 
         this.attach();
         this.setPlacement();
@@ -59,12 +60,14 @@ class MobileNav {
     open() {
         this.$trigger.addClass('is-active');
         this.$target.addClass('is-open');
-        this.$html.addClass('mobile-navigation-open')
+        this.$html.addClass('mobile-navigation-open');
+        this.$overlay.addClass('is-visible');
     }
     close() {
         this.$trigger.removeClass('is-active');
         this.$target.removeClass('is-open');
         this.$html.removeClass('mobile-navigation-open');
+        this.$overlay.removeClass('is-visible');
         this.$menus.each(function() {
             $(this).removeClass('is-open');
         });
