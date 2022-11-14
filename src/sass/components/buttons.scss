@@ -78,9 +78,18 @@
     background: none;
     border: 0;
     color: $blue;
+    font-size: $h7-font-size;
 }
 
 .btn.btn-round {
     padding: pxtoem(3, 16) pxtoem(10, 16) pxtoem(7, 16);
     border-radius: 99em;
+}
+
+.btn.btn-always-inline {
+    @include media-breakpoint-down(sm) {
+        display: inline-flex;
+        text-align: center;
+        width: auto;
+    }
 }

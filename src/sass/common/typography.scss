@@ -1,3 +1,9 @@
 p {
     font-family: $font-family-base;
 }
+
+figcaption {
+    font-size: $h8-font-size;
+    font-size: $font-family-display;
+    margin-top: pxtorem(10);
+}

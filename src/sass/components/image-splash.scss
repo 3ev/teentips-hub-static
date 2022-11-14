@@ -1,0 +1,6 @@
+.image-splash {
+    margin: pxtorem(48) 0;
+    @include media-breakpoint-up(lg) {
+        width: 880px;
+    }
+}
