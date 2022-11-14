@@ -43,8 +43,6 @@
     padding-top: 24px;
     
     @include media-breakpoint-up(lg) {
-        margin-right: 23.63636363636364%;
-
         .action-card--extra-spacing & {
             padding-top: 75px;
         }
