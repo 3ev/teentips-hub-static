@@ -2,10 +2,11 @@
     margin: 0;
     letter-spacing: 0.1em;
     font-size: $h8-font-size;
+    font-family: $font-family-display;
     line-height: 1em;
     font-weight: 700;
     text-transform: uppercase;
-    color: $blue;
+    color: $darkblue;
 }
 
 .kicker--small {

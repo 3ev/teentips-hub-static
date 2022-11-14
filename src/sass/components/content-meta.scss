@@ -1,0 +1,20 @@
+.content-meta {
+    margin: pxtorem(24) 0;
+    color: $darkblue;
+    @include media-breakpoint-up(lg) {
+        margin: pxtorem(30) 0;
+    }
+}
+
+.content-meta__item {
+    margin-bottom: pxtorem(4);
+}
+
+.content-meta__tags {
+    display: flex;
+    gap: 4px;
+    margin-top: pxtorem(12);
+    margin-bottom: pxtorem(30);
+}
+
+
