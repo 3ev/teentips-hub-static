@@ -2,19 +2,43 @@ class MobileNav {
     constructor($trigger, $html) {
         this.$trigger = $trigger;
         this.$html = $html;
-        this.targetId = $trigger.attr('href');
+        this.checkBreakpoint();
+        window.addEventListener('resize', () => {
+            this.checkBreakpoint();
+        });
+    }
+    checkBreakpoint() {
+        if (window.matchMedia('(max-width: 1199px)').matches) {
+            this.activate();
+        }
+        else {
+            this.deactivate();
+        }
+    }
+    activate() {
+        this.active = true;
+        this.targetId = this.$trigger.attr('href');
         this.$target = $(this.targetId);
         this.$closeTrigger = $('.js-mobile-navigation__close-trigger');
         this.$menus = $('.js-mobile-navigation');
         this.$menuItems = $('.js-mobile-navigation__menu-item');
         this.$backTriggers = $('.js-mobile-navigation__back-trigger');
         this.$overlay = $('.js-mobile-navigation__overlay');
+        this.$searchTrigger = $('.js-mobile-navigation__search-trigger');
 
         this.attach();
         this.setPlacement();
         $(window).on('resize', () => {
             this.setPlacement();
         });
+    }
+    deactivate() {
+        if(this.active == true) {
+            this.close();
+            return;
+        }
+        this.active = false;
+
     }
     attach() {
         let obj = this;
@@ -43,6 +67,12 @@ class MobileNav {
             e.preventDefault();
             const $this = $(this);
             obj.closeSelf($this);
+        });
+        this.$searchTrigger.on('click', function(e) {
+            e.preventDefault();
+            const targetId = $(this).attr('href');
+            const $target = $(targetId);
+            obj.openNavItem($target);
         });
         this.$menuItems.each(function() {
             const $menuItem = $(this);

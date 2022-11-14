@@ -20,12 +20,15 @@ body {
 }
 
 .site-header__search-button {
+    display: flex;
+    align-items: center;
     padding: pxtorem(14);
     margin-right: 18px;
     font-size: $h6-font-size;
     background: none;
     border: 0;
-    color: $white;
+    line-height: 1;
+    border-radius: $border-radius;
 }
 
 .site-header__nav-item-icon {

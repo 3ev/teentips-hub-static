@@ -18,6 +18,9 @@ const TopicNav = {
         }
     },
     activateCollapse() {
+        if($('.js-topic-navigation__list').length == 0) {
+            return;
+        }
         this.collapsible = Collapse.getOrCreateInstance('.js-topic-navigation__list', {
             toggle: false,
         });
