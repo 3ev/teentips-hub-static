@@ -14,6 +14,10 @@ html.mobile-navigation-open {
     @include visually-hidden;
 }
 
+.mobile-navigation__trigger-icon {
+    vertical-align: sub;
+}
+
 .mobile-navigation {
     pointer-events: none;
     position: fixed;
@@ -24,17 +28,27 @@ html.mobile-navigation-open {
     opacity: 0;
     transition: opacity 0.5s;
     background: $darkblue-5;
-    z-index: 10;
+    z-index: 20;
 
     &.is-open {
         pointer-events: initial;
         opacity: 1;
+    }
+
+    @include media-breakpoint-up(md) {
+        left: auto;
+        width: 375px;
     }
 }
 
 .mobile-navigation__header {
     padding: 24px 18px;
     background: $darkblue-10;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
 }
 
 .mobile-navigation__header-action {
@@ -56,6 +70,11 @@ html.mobile-navigation-open {
     left: 0;
     right: 0;
     overflow-y: auto;
+
+    @include media-breakpoint-up(md) {
+        left: auto;
+        width: 375px;
+    }
 }
 
 .mobile-navigation__menu-item {
@@ -117,4 +136,22 @@ html.mobile-navigation-open {
 
 .mobile-navigation__cta {
     padding: 30px;
+}
+
+.mobile-navigation__overlay {
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    transition: opacity 0.5s;
+    background: rgb(0 0 0 / 30%);
+
+    &.is-visible {
+        pointer-events: initial;
+        opacity: 1;
+    }
 }
