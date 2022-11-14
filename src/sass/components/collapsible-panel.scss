@@ -1,0 +1,41 @@
+.collapsible-panel {
+    background: $darkblue-5;
+    border-radius: $border-radius;
+}
+
+.collapsible-panel__title {
+    font-size: $h5-font-size;
+    margin: 0;
+}
+
+.collapsible-panel__trigger {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    padding: 24px 30px;
+    border-radius: $border-radius;
+    &:hover {
+        background: $darkblue-10;
+    }
+    .collapsible-panel.is-open & {
+        border-radius: $border-radius $border-radius 0 0;
+    }
+}
+
+.collapsible-panel__title-text {
+    flex-grow: 1;
+}
+
+.collapsible-panel__title-icon {
+    font-size: pxtorem(12);
+    text-decoration: none;
+    
+    .collapsible-panel.is-open & {
+        rotate: 180deg;
+    }
+}
+
+.collapsible-panel.is-open .collapsible-panel__content {
+    padding: 12px 30px 24px;
+}

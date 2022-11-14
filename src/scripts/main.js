@@ -11,6 +11,7 @@ import NavOver from './setup/nav-over';
 import NoJS from './setup/no';
 import MobileNav from './setup/mobile-navigation';
 import TopicNav from './setup/topic-navigation';
+import CollapsiblePanel from './setup/collapsible-panel';
 
 /**
  * app.main
@@ -27,6 +28,7 @@ const main = async (err) => {
     StickyHeader.init();
     NavOver.init();
     TopicNav.init();
+    CollapsiblePanel.init();
 
     $('.js-mobile-navigation__trigger').each(function() {
         const $html = $('html, body');
