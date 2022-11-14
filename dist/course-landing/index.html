@@ -29,8 +29,8 @@
                     <li><a href="#nav-support" class="btn btn-invisible btn-sm site-header__nav-item js-site-header__nav-item">Support <span class="site-header__nav-item-icon icon icon-nav-down"></span></a></li>
                 </ul>
             </nav>
-            <div class="col-3 offset-1 offset-md-4 offset-lg-5 offset-xl-0 col-xl d-flex justify-content-end">
-                <button class="site-header__search-button icon icon-search"><span class="visually-hidden">Search</span></button>
+            <div class="col-3 offset-1 offset-md-4 offset-lg-5 offset-xl-0 col-xl d-flex justify-content-end align-items-center">
+                <a href="#nav-search" class="js-site-header__nav-item site-header__search-button btn btn-invisible icon icon-search"><span class="visually-hidden">Search</span></a>
                 <a id="mobile-account-navigation-trigger" class="js-mobile-navigation__trigger mobile-navigation__trigger align-self-center d-xl-none" href="#mobile-account-navigation"><span class="mobile-navigation__trigger-icon icon icon-user"></span><span class="visually-hidden">Your account</span></a>
                 <a class="btn btn-outline-inverse btn-sm align-self-center site-header__account-button d-none d-xl-flex" href="/account"><span class="mobile-navigation__trigger-icon icon icon-user"></span><span class="site-header__account-button-text">Your account</span></a>
                 <a id="mobile-navigation-trigger" href="#mobile-navigation" class="js-mobile-navigation__trigger mobile-navigation__trigger btn d-xl-none">
@@ -124,7 +124,12 @@
             <li><a class="js-mobile-navigation__menu-item mobile-navigation__menu-item d-flex align-items-center justify-content-between" href="/h"><span class="mobile-navigation__menu-item-text">Self Care</span><span class="icon icon-link-arrow d-flex mobile-navigation__menu-item-icon"></span></a></li>
             <li><a class="js-mobile-navigation__menu-item mobile-navigation__menu-item d-flex align-items-center justify-content-between" href="/j"><span class="mobile-navigation__menu-item-text">All resources</span><span class="icon icon-link-arrow d-flex mobile-navigation__menu-item-icon"></span></a></li>
         </ul>
-
+    </div>
+</div>
+<div id="mobile-nav-search" class="js-mobile-navigation mobile-navigation">
+    <div class="js-mobile-navigation__header mobile-navigation__header d-flex align-items-center justify-content-between">
+        <a class="js-mobile-navigation__back-trigger mobile-navigation__header-action rotate-180" aria-controls="mobile-nav-courses" href="#mobile-navigation"><span class="icon icon-link-arrow"></span><span class="visually-hidden">Back to main menu</span></a>
+        <a class="mobile-navigation__header-action js-mobile-navigation__close-trigger" href="#mobile-navigation-trigger"><span class="icon icon-close"></span><span class="visually-hidden">Close</span></a>
     </div>
 </div>
 
@@ -278,6 +283,18 @@
                     <h2 class="nav-over__content-heading">Therapist Directory</h2>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div id="nav-search" class="nav-over">
+    <div class="container nav-over__container">
+        <div class="search-panel">
+            <label for="search" class="form-label">Search Resources</label>
+            <div class="input-group flex-nowrap">
+                <input type="text" id="search" class="form-control" placeholder="Enter keyword" aria-describedby="searchHelp">
+                <button class="btn btn-secondary" type="button" id="search-button"><span class="icon icon-search"></span><span class="visually-hidden-sm-only">Search</span></button>
+            </div>              
+            <div id="searchHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
     </div>
 </div>
