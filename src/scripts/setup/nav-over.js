@@ -24,7 +24,7 @@ const NavOver = {
         const obj = this;
         $('.js-site-header__nav-item').each(function() {
             const $navItem = $(this);
-            obj.navItems.push(new NavOverItem($navItem, $html, closeAllNavs, $overlay, $homeLink));
+            navItems.push(new NavOverItem($navItem, $html, closeAllNavs, $overlay, $homeLink));
         });
         this.setPlacement();
         window.addEventListener('resize', this.setPlacement);
@@ -40,14 +40,14 @@ const NavOver = {
         this.closeAllNavs();
     },
     closeAllNavs() {
-        for (const navItem of this.navItems) {
+        for (const navItem of navItems) {
             if(navItem.isActive) {
                 navItem.close();
             }
         }
     },
     setPlacement() {
-        const siteHeaderHeight = $('.js-site-header').css('height');
+        const siteHeaderHeight = $('.js-site-header').outerHeight();
         for (const navItem of navItems) {
             const $target = navItem.$target;
             $target.css('padding-top', siteHeaderHeight);
