@@ -10,6 +10,9 @@ const NavOver = {
     },
     checkBreakpoint() {
         if (window.matchMedia('(min-width: 1200px)').matches) {
+            if(navItems.length > 0) {
+                return;
+            }
             this.activate();
         }
         else {
@@ -21,7 +24,6 @@ const NavOver = {
         const $html = $('html, body');
         const $overlay = $('.nav-over__overlay');
         const $homeLink = $('.js-site-header__logo');
-        const obj = this;
         $('.js-site-header__nav-item').each(function() {
             const $navItem = $(this);
             navItems.push(new NavOverItem($navItem, $html, closeAllNavs, $overlay, $homeLink));
