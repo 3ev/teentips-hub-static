@@ -2,20 +2,45 @@ let navItems = new Array;
 
 const NavOver = {
     init() {
+        this.navItems = new Array;
+        this.checkBreakpoint();
+        window.addEventListener('resize', () => {
+            this.checkBreakpoint();
+        });
+    },
+    checkBreakpoint() {
+        if (window.matchMedia('(min-width: 1200px)').matches) {
+            this.activate();
+        }
+        else {
+            this.deactivate();
+        }
+    },
+    activate() {
         const closeAllNavs = this.closeAllNavs;
         const $html = $('html, body');
         const $overlay = $('.nav-over__overlay');
         const $homeLink = $('.js-site-header__logo');
+        const obj = this;
         $('.js-site-header__nav-item').each(function() {
             const $navItem = $(this);
-            const navItem = new NavOverItem($navItem, $html, closeAllNavs, $overlay, $homeLink);
-            navItems.push(navItem);
+            obj.navItems.push(new NavOverItem($navItem, $html, closeAllNavs, $overlay, $homeLink));
         });
         this.setPlacement();
         window.addEventListener('resize', this.setPlacement);
     },
+    deactivate() {
+        if(this.navItems.length == 0) {
+            return;
+        }
+        for (let navItem = 0; navItem < navItems.length; navItem++) {
+            const element = array[navItem];
+            element.closeAllSubNavs();
+        }
+        this.closeAllNavs();
+    },
     closeAllNavs() {
-        for (const navItem of navItems) {
+        for (const navItem of this.navItems) {
             if(navItem.isActive) {
                 navItem.close();
             }
@@ -62,6 +87,9 @@ class NavOverItem {
         // The sub-navigation in each pane
         const navItem = this;
         this.$subNavItems = this.$target.find('.js-nav-over__nav-item');
+        if(this.$subNavItems.length === 0) {
+            return;
+        }
         let subNavItems = new Array;
         this.$subNavItems.each(function() {
             const $subNavItem = $(this);
